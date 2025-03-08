@@ -1,0 +1,91 @@
+// Define design tokens
+$footer-bg-light: #f9fafb;
+$footer-bg-dark: #1f2937;
+$text-light: #4b5563;
+$text-dark: #d1d5db;
+$border-light: #e5e7eb;
+$border-dark: #374151;
+$link-hover-color: #3b82f6;
+$transition-duration: 0.3s;
+
+// Footer container styling
+.footer {
+  background-color: $footer-bg-light;
+  padding: 3rem 0;
+  color: $text-light;
+  @media (prefers-color-scheme: dark) {
+    background-color: $footer-bg-dark;
+    color: $text-dark;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  p,
+  li,
+  a,
+  span {
+    font-size: 0.875rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color $transition-duration ease;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      @media (prefers-color-scheme: dark) {
+        background-color: #374151;
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid $border-light;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    @media (prefers-color-scheme: dark) {
+      border-top: 1px solid $border-dark;
+    }
+  }
+}

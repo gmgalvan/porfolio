@@ -1,0 +1,18 @@
+// src/styles/_mixins.scss
+
+// Example mixin for a flex center container
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Responsive typography mixin
+  @mixin responsive-text($min, $max) {
+    font-size: $min;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: $max;
+    }
+  }
+  

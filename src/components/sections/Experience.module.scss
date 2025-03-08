@@ -1,0 +1,149 @@
+// Design Tokens
+$bg-light: #ffffff;
+$bg-dark: #1f2937;
+$text-light: #2d3748;
+$text-muted: #4b5563;
+$primary-color: #3b82f6;
+$hover-bg: #eff6ff;
+$transition-duration: 0.3s;
+
+// Fade-in effect (for section load)
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experienceSection {
+  padding: 4rem 2rem;
+  background-color: $bg-light;
+  @media (prefers-color-scheme: dark) {
+    background-color: $bg-dark;
+  }
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $text-light;
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .underline {
+      width: 5rem;
+      height: 0.25rem;
+      background-color: $primary-color;
+      margin: 1rem auto;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $text-muted;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+
+    // Tabs column
+    .projectTabs {
+      flex: 1;
+      .tabButton {
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+        border-left: 4px solid transparent;
+        transition: background-color $transition-duration ease,
+          border-color $transition-duration ease;
+        background-color: transparent;
+        cursor: pointer;
+
+        h3 {
+          font-weight: bold;
+          margin-bottom: 0.25rem;
+          color: $text-light;
+        }
+        p {
+          font-size: 0.875rem;
+          color: $text-muted;
+        }
+
+        &:hover {
+          background-color: $hover-bg;
+        }
+      }
+      .active {
+        border-color: $primary-color;
+        background-color: $hover-bg;
+      }
+    }
+
+    // Details column
+    .projectDetails {
+      flex: 2;
+      background-color: $bg-light;
+      @media (prefers-color-scheme: dark) {
+        background-color: $bg-dark;
+      }
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: $text-light;
+      }
+      p.info {
+        font-size: 0.875rem;
+        color: $text-muted;
+        margin-bottom: 1rem;
+      }
+      p.description {
+        font-size: 1rem;
+        color: $text-light;
+        margin-bottom: 1.5rem;
+      }
+      .techList {
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        span {
+          background-color: #f1f5f9;
+          color: $primary-color;
+          padding: 0.25rem 0.75rem;
+          border-radius: 9999px;
+          font-size: 0.75rem;
+        }
+      }
+      ul.responsibilities {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        li {
+          font-size: 0.875rem;
+          color: $text-muted;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+}

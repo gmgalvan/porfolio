@@ -1,0 +1,124 @@
+{
+    "navigation": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "skills": "Habilidades",
+      "experience": "Experiencia",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "title": "Hola, soy Guillermo Galvan",
+      "subtitle": "Ingeniero de Software Senior especializado en Go, Python y Arquitectura en la Nube",
+      "cta": "Ver Mi Trabajo"
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "content": [
+        "He trabajado como Ingeniero de Software por más de 6 años, dominando Go, Python y prácticas DevOps.",
+        "Durante mi carrera, he trabajado activamente con sistemas distribuidos, asegurando integraciones fluidas y optimización de rendimiento.",
+        "Con más de 5 años dedicados a Go, he desarrollado aplicaciones que enfatizan algoritmos sofisticados y estructuras de datos.",
+        "Mi conjunto de herramientas incluye tecnologías de big data como AWS Glue y Athena, y he orquestado migraciones a través de Dataflow desde GCP.",
+        "Mi experiencia en bases de datos abarca diversas plataformas relacionales y NoSQL, lo que ha sido fundamental para resolver desafíos complejos centrados en datos.",
+        "Aunque mis competencias en backend son extensas, también he participado en proyectos frontend, asegurando un enfoque holístico al desarrollo de software.",
+        "Mi familiaridad con Kubernetes, Docker y plataformas en la nube, especialmente AWS y GCP, se sinergiza bien con mi experiencia en DevOps."
+      ]
+    },
+    "skills": {
+   "title": "Habilidades Técnicas",
+   "subtitle": "Una amplia gama de competencias técnicas que he desarrollado a lo largo de mi carrera",
+   "categories": {
+     "languages": {
+       "title": "Programming Languages",
+       "skills": [
+         { "name": "Go", "level": 5 },
+         { "name": "Python", "level": 5 },
+         { "name": "JavaScript", "level": 4 }
+       ]
+     },
+     "frontend": {
+       "title": "Frontend Technologies",
+       "skills": [
+         { "name": "React", "level": 4 },
+         { "name": "Next.js", "level": 3 }
+       ]
+     },
+     "backend": {
+       "title": "Backend Technologies",
+       "skills": [
+         { "name": "Node.js", "level": 4 },
+         { "name": "GraphQL", "level": 3 }
+       ]
+     }
+   }
+},
+    "experience": {
+      "title": "Experiencia Profesional",
+      "subtitle": "Un recorrido por los momentos destacados y logros de mi carrera",
+      "viewAll": "Ver Todos los Proyectos",
+      "roles": [
+        {
+          "title": "Desarrollador Senior de Go",
+          "company": "Solución de Monitoreo IT",
+          "period": "5 meses",
+          "location": "Estados Unidos (Remoto)"
+        },
+        {
+          "title": "Desarrollador Backend de Go",
+          "company": "Sistema de Gestión de Transporte",
+          "period": "1 año y 7 meses",
+          "location": "Estados Unidos (Remoto)"
+        },
+        {
+          "title": "Desarrollador de Go",
+          "company": "Plataforma de Gestión de Relaciones con Pacientes",
+          "period": "1 año y 9 meses",
+          "location": "Estados Unidos (Remoto)"
+        },
+        {
+          "title": "Ingeniero DevOps Cloud",
+          "company": "Consultoría IT y Migración a la Nube",
+          "period": "10 meses",
+          "location": "Estados Unidos y México"
+        },
+        {
+          "title": "Desarrollador Web",
+          "company": "Plataforma de Automatización de Servicio al Cliente",
+          "period": "1 año y 7 meses",
+          "location": "México"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Proyectos Destacados",
+      "subtitle": "Una selección de mi trabajo más impactante",
+      "viewProject": "Ver Proyecto"
+    },
+    "education": {
+      "title": "Educación",
+      "degree": "Ingeniero en Mecatrónica",
+      "institution": "Centro de Enseñanza Técnico e Industrial",
+      "period": "Graduado en 2015"
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "¿Tienes un proyecto en mente o te interesa trabajar juntos? ¡Hablemos!",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo Electrónico",
+        "message": "Mensaje",
+        "send": "Enviar Mensaje"
+      },
+      "success": "¡Gracias! Tu mensaje ha sido enviado con éxito.",
+      "error": "¡Ups! Algo salió mal. Por favor, inténtalo de nuevo."
+    },
+    "certifications" :{
+      "title": "Certificaciones",
+      "certifications": [
+        {
+          "title": "Terraform Associate",
+          "institution": "HashiCorp",
+          "period": "Emitida en 2020"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,79 @@
+// Define your design tokens
+$primary-color: #1a2a6c;
+$secondary-color: #fdbb2d;
+$light-gray: #f5f5f5;
+$text-color: #333;
+$dark-text: #555;
+
+// Mixin for smooth hover transition on images
+@mixin hoverScale($scale: 1.05, $duration: 0.3s) {
+  transition: transform $duration ease;
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+.about-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, $light-gray, white);
+  color: $text-color;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .profile {
+    flex: 1;
+    text-align: center;
+    
+    img {
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      @include hoverScale();
+    }
+  }
+
+  .bio {
+    flex: 2;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: $dark-text;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background-color: $secondary-color;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+}
