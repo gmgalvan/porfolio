@@ -261,10 +261,10 @@ const Experience = ({
 
   return (
     <section id="experience" ref={sectionRef} className={styles.experienceSection}>
-      <div className="container mx-auto px-6">
+      <div className={styles.container}>
         <div className={styles.sectionHeader}>
           <h2>{dictionary.experience.title}</h2>
-          <div className="underline"></div>
+          <div className={styles.underline}></div>
           <p>{dictionary.experience.subtitle}</p>
         </div>
 
@@ -291,23 +291,23 @@ const Experience = ({
           {activeProjectData && (
             <div className={styles.projectDetails}>
               <h3>{activeProjectData.title}</h3>
-              <p className="info">
+              <p className={styles.info}>
                 {activeProjectData.role} | {activeProjectData.customer} |{" "}
                 {activeProjectData.duration}
               </p>
-              <p className="description">{activeProjectData.description}</p>
+              <p className={styles.description}>{activeProjectData.description}</p>
 
               <div className="mb-6">
-                <h4 className="text-lg font-semibold mb-3">
+                <h4 className={styles.sectionTitle}>
                   {lang === "es"
                     ? "Tecnologías Utilizadas"
                     : "Technologies Used"}
                 </h4>
-                <div className="flex flex-wrap gap-2">
+                <div className={styles.techList}>
                   {activeProjectData.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full text-sm"
+                      className={styles.techTag}
                     >
                       {tech}
                     </span>
@@ -316,12 +316,12 @@ const Experience = ({
               </div>
 
               <div>
-                <h4 className="text-lg font-semibold mb-3">
+                <h4 className={styles.sectionTitle}>
                   {lang === "es"
                     ? "Responsabilidades"
                     : "Responsibilities"}
                 </h4>
-                <ul className="list-disc list-inside space-y-1">
+                <ul className={styles.responsibilities}>
                   {activeProjectData.responsibilities.map((resp, index) => (
                     <li key={index}>{resp}</li>
                   ))}

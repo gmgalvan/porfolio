@@ -1,125 +1,212 @@
 {
-    "navigation": {
-      "home": "Home",
-      "about": "About",
-      "skills": "Skills",
-      "experience": "Experience",
-      "contact": "Contact"
-    },
-    "hero": {
-      "title": "Hi, I'm Guillermo Galvan",
-      "subtitle": "Senior Software Engineer specializing in Go, Python, and Cloud Architecture",
-      "cta": "View My Work"
-    },
-    "about": {
-      "title": "About Me",
-      "content": [
-        "I have been working as a Software Engineer for over 6 years, mastering Go, Python, and DevOps practices.",
-        "Throughout my career, I've actively worked with distributed systems, ensuring seamless integrations and performance optimization.",
-        "With over 5 years devoted to Go, I've crafted applications that emphasize sophisticated algorithms and data structures.",
-        "My toolkit includes big data technologies like AWS Glue and Athena, and I've orchestrated migrations through Dataflow from GCP.",
-        "My database expertise spans across various relational and NoSQL platforms, which has been pivotal in solving complex data-centric challenges.",
-        "While my backend proficiencies are extensive, I've also engaged in frontend projects, ensuring a holistic approach to software development.",
-        "My familiarity with Kubernetes, Docker, and cloud platforms, especially AWS and GCP, synergizes well with my DevOps experience."
-      ]
-    },
-    "skills": {
-   "title": "Technical Skills",
-   "subtitle": "A comprehensive range of technical competencies I've developed throughout my career",
-   "categories": {
-     "languages": {
-       "title": "Programming Languages",
-       "skills": [
-         { "name": "Go", "level": 5 },
-         { "name": "Python", "level": 5 },
-         { "name": "JavaScript", "level": 4 }
-       ]
-     },
-     "frontend": {
-       "title": "Frontend Technologies",
-       "skills": [
-         { "name": "React", "level": 3 },
-         { "name": "Next.js", "level": 3 }
-       ]
-     },
-     "backend": {
-       "title": "Backend Technologies",
-       "skills": [
-         { "name": "Node.js", "level": 4 },
-         { "name": "GraphQL", "level": 3 }
-       ]
-     }
-   }
-},
-    "experience": {
-      "title": "Professional Experience",
-      "subtitle": "A journey through my career highlights and achievements",
-      "viewAll": "View All Projects",
-      "roles": [
-        {
-          "title": "Senior Go Developer",
-          "company": "IT Monitoring Solution",
-          "period": "5 months",
-          "location": "United States (Remote)"
-        },
-        {
-          "title": "Backend Go Developer",
-          "company": "Transportation Management System",
-          "period": "1 year 7 months",
-          "location": "United States (Remote)"
-        },
-        {
-          "title": "Go Developer",
-          "company": "Patient Relationship Management Platform",
-          "period": "1 year 9 months",
-          "location": "United States (Remote)"
-        },
-        {
-          "title": "DevOps Cloud Engineer",
-          "company": "IT Consultancy and Cloud Migration",
-          "period": "10 months",
-          "location": "United States & Mexico"
-        },
-        {
-          "title": "Software Web Developer",
-          "company": "Customer Service Automation Platform",
-          "period": "1 year 7 months",
-          "location": "Mexico"
-        }
-      ]
-    },
-    "projects": {
-      "title": "Featured Projects",
-      "subtitle": "A selection of my most impactful work",
-      "viewProject": "View Project"
-    },
-    "education": {
-      "title": "Education",
-      "degree": "Mechatronics Engineer",
-      "institution": "Centro de Enseñanza Técnico e Industrial",
-      "period": "Graduated in 2015"
-    },
-    "contact": {
-      "title": "Get In Touch",
-      "subtitle": "Have a project in mind or interested in working together? Let's talk!",
-      "form": {
-        "name": "Name",
-        "email": "Email",
-        "message": "Message",
-        "send": "Send Message"
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm Guillermo Galvan",
+    "subtitle": "Senior Software Engineer specializing in Go, Python, and Cloud Architecture",
+    "cta": "View My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "content": [
+      "I have been working as a Software Engineer for over 6 years, mastering Go, Python, and DevOps practices.",
+      "Throughout my career, I've actively worked with distributed systems, ensuring seamless integrations and performance optimization.",
+      "With over 5 years devoted to Go, I've crafted applications that emphasize sophisticated algorithms and data structures.",
+      "My toolkit includes big data technologies like AWS Glue, Athena, and Google Cloud Dataflow, complemented by expertise with Apache Beam and Java.",
+      "My database expertise spans across various relational and NoSQL platforms, including PostgreSQL, MongoDB, BigTable, and Cloud Spanner, which has been pivotal in solving complex data-centric challenges.",
+      "While my backend proficiencies are extensive, I've also engaged in frontend projects with Vue.js, Angular, and TypeScript, ensuring a holistic approach to software development.",
+      "My familiarity with Kubernetes, Docker, and cloud platforms, especially AWS and GCP, synergizes well with my DevOps experience, all underscored by a proactive attitude and consistent communication excellence."
+    ]
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "A comprehensive range of technical competencies I've developed throughout my career",
+    "categories": {
+      "languages": {
+        "title": "Programming Languages",
+        "skills": [
+          { "name": "Go", "level": 5 },
+          { "name": "Python", "level": 5 },
+          { "name": "JavaScript/TypeScript", "level": 4 },
+          { "name": "Java", "level": 3 }
+        ]
       },
-      "success": "Thank you! Your message has been sent successfully.",
-      "error": "Oops! Something went wrong. Please try again."
-    },
-    "certifications" :{
-      "title": "Certifications",
-      "subtitle": "A collection of certifications I've earned throughout my career",
-      "certificates": [
-        {
-          "title": "Terraform - Associate",
-          "institution": "Hashicorp",
-          "date": "June 2021"
-        }
-      ]
+      "frontend": {
+        "title": "Frontend Technologies",
+        "skills": [
+          { "name": "Vue.js", "level": 4 },
+          { "name": "Angular", "level": 3 },
+          { "name": "React", "level": 3 },
+          { "name": "Mithril", "level": 3 }
+        ]
+      },
+      "backend": {
+        "title": "Backend Technologies",
+        "skills": [
+          { "name": "Echo", "level": 4 },
+          { "name": "Gorilla Mux", "level": 4 },
+          { "name": "Flask", "level": 3 },
+          { "name": "gRPC", "level": 4 },
+          { "name": "GraphQL", "level": 3 }
+        ]
+      },
+      "cloud": {
+        "title": "Cloud Technologies",
+        "skills": [
+          { "name": "AWS", "level": 4 },
+          { "name": "Google Cloud", "level": 4 },
+          { "name": "IBM Cloud", "level": 3 }
+        ]
+      },
+      "databases": {
+        "title": "Databases",
+        "skills": [
+          { "name": "PostgreSQL", "level": 4 },
+          { "name": "MongoDB", "level": 4 },
+          { "name": "BigTable", "level": 3 },
+          { "name": "Cloud Spanner", "level": 3 }
+        ]
+      },
+      "devops": {
+        "title": "DevOps Technologies",
+        "skills": [
+          { "name": "Docker", "level": 5 },
+          { "name": "Kubernetes", "level": 4 },
+          { "name": "Terraform", "level": 4 },
+          { "name": "Jenkins", "level": 3 },
+          { "name": "CircleCI", "level": 3 },
+          { "name": "Spinnaker", "level": 3 }
+        ]
+      },
+      "bigdata": {
+        "title": "Big Data & Analytics",
+        "skills": [
+          { "name": "AWS Glue", "level": 4 },
+          { "name": "AWS Athena", "level": 4 },
+          { "name": "Google Dataflow", "level": 4 },
+          { "name": "Apache Beam", "level": 3 },
+          { "name": "Kafka", "level": 3 },
+          { "name": "Airflow", "level": 3 },
+          { "name": "Superset", "level": 3 }
+        ]
+      }
     }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "A journey through my career highlights and achievements",
+    "viewAll": "View All Projects",
+    "roles": [
+      {
+        "title": "Senior Go Developer",
+        "company": "IT Monitoring Solution",
+        "period": "5 months",
+        "location": "United States (Remote)",
+        "description": "Worked on an IT monitoring tool that provides enterprises with deep visibility into their entire IT infrastructures. The platform is built on a distributed system framework using Go, with GraphQL as the API gateway for a microservices architecture. Responsibilities included architecture design, code development, team leadership, and ensuring code security and quality.",
+        "technologies": "Go, Python, Java, JavaScript, Vue.js, Kubernetes, GCP, GKE, Dataflow, GraphQL, Protocol Buffers, gRPC, MongoDB, Etcd, Spinnaker, Jenkins, ElasticSearch, Ginkgo"
+      },
+      {
+        "title": "Backend Go Developer",
+        "company": "Transportation Management System",
+        "period": "1 year 7 months",
+        "location": "United States (Remote)",
+        "description": "Developed an advanced Transportation Management System built on microservices architecture that seamlessly integrates with monolithic systems and interfaces with machine learning systems. Utilized event-driven approaches for real-time responsiveness and asynchronous communication patterns. Led performance optimization efforts and worked with Superset for data visualization and Airflow for workflow orchestration.",
+        "technologies": "Go, Python, Kubernetes, PostgreSQL, Etcd, TypeScript, Angular, Docker, CircleCI, AWS, GCP, GKE, Cypress, Superset, LogRocket, Airflow, DataDog, Docker Compose"
+      },
+      {
+        "title": "Go Developer",
+        "company": "Patient Relationship Management Platform",
+        "period": "1 year 9 months",
+        "location": "United States (Remote)",
+        "description": "Developed a healthcare patient relationship management platform with tools to enhance patient experience. The system's containers were orchestrated by Kubernetes, with Docker ensuring consistent environments. Communication between microservices was facilitated via Pub/Sub, while external interfaces communicated through RESTful APIs and internal service-to-service interactions utilized gRPC.",
+        "technologies": "Go, GCP, GKE, JavaScript, Vue.js, Mithril, PubSub, Dataflow, PostgreSQL, CockroachDB, Echo, Microservices, REST, gRPC, GCP BigTable, Cloud Spanner, GitLab"
+      },
+      {
+        "title": "DevOps Cloud Engineer",
+        "company": "IT Consultancy and Cloud Migration",
+        "period": "10 months",
+        "location": "United States & Mexico",
+        "description": "Led migration of existing services to cloud environments, prioritizing seamless integration of distinct projects and custom architectural designs. Implemented comprehensive reporting systems for cloud cost management and optimization. Provided specialized AWS consultations, management, and guidance.",
+        "technologies": "AWS, S3, Elastic Beanstalk, Cognito, Glue, Athena, Lambda, CloudWatch Events, CloudFormation, Go, Python, Celery, Kafka, New Relic, Zendesk, AWS ECR, Vue.js, JavaScript, Terraform, Jenkins, AWS CodeBuild, AWS CodePipeline"
+      },
+      {
+        "title": "Software Web Developer",
+        "company": "Customer Service Automation Platform",
+        "period": "1 year 7 months",
+        "location": "Mexico",
+        "description": "Developed a customer service automation platform for domain registration and web hosting services. The platform employed chatbots, integrated IBM Watson for chat automation, used containerized applications for efficient service delivery, and leveraged NLP and data analysis to refine customer interactions.",
+        "technologies": "Go, Python, Docker, Docker Compose, IBM Bluemix Cloud, Watson AI, Rasa, Beautiful Soup, Scrapy, Pandas, MongoDB, Gorilla Mux"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my most impactful work",
+    "viewProject": "View Project",
+    "projects": [
+      {
+        "title": "IT Monitoring Platform",
+        "description": "Developed a distributed system for enterprise IT infrastructure monitoring using Go, GraphQL, and microservices architecture.",
+        "image": "project-monitoring.jpg",
+        "technologies": ["Go", "GraphQL", "Kubernetes", "Microservices"]
+      },
+      {
+        "title": "Transportation Management System",
+        "description": "Built an event-driven, real-time logistics platform with machine learning integration for enhanced decision-making.",
+        "image": "project-tms.jpg",
+        "technologies": ["Go", "Kubernetes", "Event-driven Architecture", "Airflow"]
+      },
+      {
+        "title": "Healthcare Patient Platform",
+        "description": "Created a microservices-based patient relationship management system with gRPC communication and cloud data integration.",
+        "image": "project-healthcare.jpg",
+        "technologies": ["Go", "gRPC", "GCP", "Cloud Spanner"]
+      },
+      {
+        "title": "Cloud Cost Management System",
+        "description": "Implemented a comprehensive reporting and optimization solution for AWS infrastructure costs.",
+        "image": "project-cloud-cost.jpg",
+        "technologies": ["AWS", "Terraform", "Go", "Python"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Mechatronics Engineer",
+    "institution": "Centro de Enseñanza Técnico e Industrial",
+    "period": "Graduated in 2015"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "A collection of certifications I've earned throughout my career",
+    "certificates": [
+      {
+        "title": "HashiCorp Certified: Terraform Associate (003)",
+        "institution": "Hashicorp",
+        "date": "October 19, 2024",
+        "link": "https://www.credly.com/badges/your-credential-link",
+        "image": "/images/certifications/hashicorp-certified-terraform-associate-003.png"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or interested in working together? Let's talk!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "success": "Thank you! Your message has been sent successfully.",
+    "error": "Oops! Something went wrong. Please try again."
   }
+}

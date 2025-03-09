@@ -36,6 +36,7 @@ const Header = ({
 
         {/* Desktop Navigation */}
         <nav className={styles["desktop-nav"]}>
+          {/* 
           <Link href={`/${lang}#about`}>
             {dictionary.navigation.about}
           </Link>
@@ -45,10 +46,12 @@ const Header = ({
           <Link href={`/${lang}#experience`}>
             {dictionary.navigation.experience}
           </Link>
+          */}
           <Link href={`/${lang}#contact`}>
             {dictionary.navigation.contact}
           </Link>
-          <LanguageSwitcher currentLang={lang} />
+          {/*<LanguageSwitcher currentLang={lang} /> */}
+
         </nav>
 
         {/* Mobile Menu Button */}

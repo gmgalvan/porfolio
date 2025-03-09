@@ -1,146 +1,245 @@
-// Define variables for colors and fonts
-$primary-color: #1a2a6c;
-$secondary-color: #fdbb2d;
-$cta-color: #ff4500;
-$text-light: #fff;
-$text-muted: lighten($text-light, 20%);
+// Modern gradient variables
+$gradient-start: #2e1f59;
+$gradient-end: #c09c53;
+$text-color: #ffffff;
+$accent-color: #ef5b31;
+$container-max-width: 1200px;
 
-// Mixin for fadeIn animation
-@mixin fadeIn($duration: 1.5s, $ease: ease-in-out) {
-  animation: fadeIn $duration $ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Main hero section styles
 .hero {
   position: relative;
-  padding: 3rem 0;
-  background: linear-gradient(135deg, $primary-color, $secondary-color);
-  color: $text-light;
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  // Altura reducida para que quepa en la pantalla
+  min-height: 85vh;
+  background: linear-gradient(135deg, $gradient-start, $gradient-end);
+  color: $text-color;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/hero-pattern.svg');
+    opacity: 0.08;
+    z-index: 1;
   }
-
+  
+  .container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  
   .section-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    @media (min-width: 768px) {
-      flex-direction: row;
-      align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; // Reducido de 3rem
+    margin-bottom: 2rem; // Reducido de 4rem
+    
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+      text-align: center;
+      margin-top: 1rem; // Reducido de 2rem
     }
   }
-
-  // Text section styles
+  
   .text-section {
     flex: 1;
-
+    min-width: 300px;
+    
     h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      @media (min-width: 768px) {
-        font-size: 3rem;
+      font-size: 3.2rem; // Reducido de 4rem
+      font-weight: 800;
+      margin-bottom: 1rem; // Reducido de 1.5rem
+      line-height: 1.1;
+      
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
       }
-      @include fadeIn();
+      
+      @media (max-width: 480px) {
+        font-size: 2.2rem;
+      }
     }
-
+    
     p {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-      color: $text-muted;
-      @include fadeIn(2s);
-    }
-
-    .cta {
-      display: inline-block;
-      background-color: $cta-color;
-      color: $text-light;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-      &:hover {
-        background-color: darken($cta-color, 10%);
+      font-size: 1.1rem; // Reducido de 1.25rem
+      line-height: 1.4;
+      margin-bottom: 1rem; // Reducido de 1.5rem
+      max-width: 580px;
+      opacity: 0.9;
+      
+      @media (max-width: 992px) {
+        margin-left: auto;
+        margin-right: auto;
       }
     }
-
-    .typing {
-      font-family: monospace;
-      font-size: 1.125rem;
-      color: #00bcd4;
+  }
+  
+  .typing {
+    font-size: 1.3rem; // Reducido de 1.5rem
+    display: inline-block;
+    
+    span {
       .cursor {
-        animation: blink 1s infinite;
-      }
-      @keyframes blink {
-        0%, 50% { opacity: 1; }
-        51%, 100% { opacity: 0; }
+        display: inline-block;
+        width: 2px;
+        margin-left: 2px;
+        animation: blink 1s step-end infinite;
       }
     }
   }
-
-  // Image section styles
+  
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .cta {
+    display: inline-block;
+    background-color: $accent-color;
+    color: white;
+    font-size: 1rem; // Reducido de 1.1rem
+    font-weight: 600;
+    padding: 0.7rem 1.8rem; // Reducido de 0.9rem 2rem
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(239, 91, 49, 0.4);
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 20px rgba(239, 91, 49, 0.5);
+    }
+    
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+  
   .image-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .profile-img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 5px solid $text-light;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
-      position: relative;
-      @include fadeIn(2.5s);
+    flex: 0 0 320px; // Reducido de 400px
+    
+    @media (max-width: 992px) {
+      flex: 0 0 280px; // Reducido de 320px
+    }
+    
+    @media (max-width: 480px) {
+      flex: 0 0 240px; // Reducido de 280px
     }
   }
-
-  // Tech stack icons section
-  .tech-stack {
-    margin-top: 2rem;
-    text-align: center;
-
-    h3 {
-      margin-bottom: 1.5rem;
-      font-size: 1.25rem;
-      color: lighten($text-light, 15%);
+  
+  .profile-img {
+    position: relative;
+    width: 100%;
+    height: 320px; // Reducido de 400px
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(255, 255, 255, 0.3); // Reducido de 6px
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); // Reducido de 0 20px 30px
+    
+    @media (max-width: 992px) {
+      height: 280px; // Reducido de 320px
+      margin: 0 auto;
     }
-
+    
+    @media (max-width: 480px) {
+      height: 240px; // Reducido de 280px
+    }
+  }
+  
+  // Sección "My Technical Stack" - versión compacta
+  .tech-stack {
+    margin-top: 1.5rem; // Reducido de 2rem
+    
+    h3 {
+      text-align: center;
+      font-size: 1.5rem; // Reducido de 1.8rem
+      font-weight: 700;
+      margin-bottom: 1.5rem; // Reducido de 2rem
+      position: relative;
+      display: inline-block;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -8px; // Reducido de -10px
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px; // Reducido de 60px
+        height: 3px; // Reducido de 4px
+        background-color: $accent-color;
+        border-radius: 2px;
+      }
+    }
+    
+    .tech-categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem; // Reducido de 2.5rem
+      margin-top: 0.5rem; // Reducido de 1rem
+      
+      @media (max-width: 768px) {
+        gap: 1rem;
+      }
+    }
+    
+    .category-group {
+      flex: 1;
+      min-width: 180px; // Reducido de 200px
+      max-width: 250px; // Reducido de 280px
+      
+      h4 {
+        font-size: 1.1rem; // Reducido de 1.2rem
+        margin-bottom: 0.7rem; // Reducido de 1rem
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      
+      .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.7rem; // Reducido de 1rem
+      }
+    }
+    
     .tech-icons {
       display: flex;
       justify-content: center;
-      gap: 1rem;
       flex-wrap: wrap;
-
-      .icon {
-        width: 60px;
-        height: 60px;
-        background: $text-light;
-        border-radius: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        font-family: monospace;
-        font-weight: 700;
-        color: $primary-color;
+      gap: 0.7rem; // Reducido de 1rem
+      margin-top: 0.7rem; // Reducido de 1rem
+    }
+    
+    .icon {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 50px;
+      padding: 0.5rem 1rem; // Reducido de 0.7rem 1.2rem
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      
+      &:hover {
+        transform: translateY(-3px); // Reducido de -5px
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); // Reducido de 0 10px 20px
+      }
+      
+      span {
+        font-size: 0.85rem; // Reducido de 0.9rem
+        font-weight: 500;
       }
     }
   }
