@@ -1,0 +1,119 @@
+// Header.module.scss
+
+// Variables
+$header-bg-light: rgba(255, 255, 255, 0.8);
+$header-bg-dark: rgba(17, 24, 39, 0.8);
+$backdrop-blur: 8px;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$gradient-from: #3b82f6;
+$gradient-to: #14b8a6;
+$text-primary: #111;
+$transition-duration: 0.3s;
+
+// Mixin for container centering
+@mixin container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  transition: background-color $transition-duration ease, box-shadow $transition-duration ease;
+  background-color: transparent;
+
+  &.scrolled {
+    background-color: $header-bg-light;
+    backdrop-filter: blur($backdrop-blur);
+    box-shadow: 0 2px 8px $shadow-color;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $header-bg-dark;
+    }
+  }
+
+  .header-container {
+    @include container;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    .gradient-text {
+      font-family: monospace;
+      background: linear-gradient(to right, $gradient-from, $gradient-to);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-primary;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $gradient-from;
+      }
+    }
+  }
+
+  .mobile-nav-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mobile-nav {
+    background-color: $header-bg-light;
+    padding: 1rem;
+    box-shadow: 0 4px 8px $shadow-color;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $header-bg-dark;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    a {
+      display: block;
+      padding: 0.5rem 0;
+      text-decoration: none;
+      color: $text-primary;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $gradient-from;
+      }
+    }
+  }
+}

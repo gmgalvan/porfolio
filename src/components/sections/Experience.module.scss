@@ -1,0 +1,295 @@
+// Design Tokens
+$bg-color: #f9fafb;
+$text-color: #1f2937;
+$accent-color-1: #4c54e0;
+$accent-color-2: #8c52ff;
+$border-color: #e5e7eb;
+$card-bg: #ffffff;
+$card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+$hover-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+$transition-time: 0.3s;
+
+// Fade-in effect (for section load)
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experienceSection {
+  padding: 6rem 2rem;
+  background-color: $bg-color;
+  color: $text-color;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+    
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, $accent-color-1, $accent-color-2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+    
+    .underline {
+      width: 6rem;
+      height: 0.3rem;
+      margin: 0.75rem auto 1.5rem;
+      background: linear-gradient(to right, $accent-color-1, $accent-color-2);
+      border-radius: 1rem;
+    }
+    
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: rgba($text-color, 0.7);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+
+    // Tabs column
+    .projectTabs {
+      flex: 1;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: $card-shadow;
+      background-color: $card-bg;
+      
+      .tabButton {
+        width: 100%;
+        text-align: left;
+        padding: 1.25rem 1.5rem;
+        border-left: 4px solid transparent;
+        transition: all $transition-time cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 1px solid $border-color;
+        
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 0;
+          background: linear-gradient(to right, rgba($accent-color-1, 0.1), rgba($accent-color-2, 0.02));
+          transition: width $transition-time cubic-bezier(0.19, 1, 0.22, 1);
+          z-index: 0;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          font-weight: 600;
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+          color: $text-color;
+          position: relative;
+          z-index: 1;
+        }
+        
+        p {
+          font-size: 0.875rem;
+          color: rgba($text-color, 0.6);
+          position: relative;
+          z-index: 1;
+        }
+      }
+      
+      .active {
+        border-left-color: $accent-color-1;
+        background: linear-gradient(to right, rgba($accent-color-1, 0.1), rgba($accent-color-2, 0.05));
+        
+        h3 {
+          background: linear-gradient(135deg, $accent-color-1, $accent-color-2);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+        }
+      }
+    }
+
+    // Details column
+    .projectDetails {
+      flex: 2;
+      background-color: $card-bg;
+      border-radius: 1rem;
+      box-shadow: $card-shadow;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform $transition-time ease, box-shadow $transition-time ease;
+      animation: fadeIn 0.5s ease-out forwards;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.3rem;
+        background: linear-gradient(to right, $accent-color-1, $accent-color-2);
+        z-index: 2;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: $hover-shadow;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, $accent-color-1, $accent-color-2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+      }
+      
+      .info {
+        font-size: 1rem;
+        color: rgba($text-color, 0.6);
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $border-color;
+      }
+      
+      .description {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: rgba($text-color, 0.8);
+        margin-bottom: 2rem;
+      }
+      
+      .sectionTitle {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: $text-color;
+      }
+      
+      .techList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+        
+        .techTag {
+          padding: 0.5rem 1rem;
+          background: linear-gradient(to right, rgba($accent-color-1, 0.1), rgba($accent-color-2, 0.1));
+          border-radius: 2rem;
+          font-size: 0.85rem;
+          color: $accent-color-1;
+          transition: all $transition-time ease;
+          
+          &:hover {
+            background: linear-gradient(to right, rgba($accent-color-1, 0.2), rgba($accent-color-2, 0.2));
+            transform: translateY(-2px);
+          }
+        }
+      }
+      
+      .responsibilities {
+        list-style-type: none;
+        padding: 0;
+        
+        li {
+          position: relative;
+          padding-left: 1.75rem;
+          margin-bottom: 0.75rem;
+          font-size: 0.95rem;
+          color: rgba($text-color, 0.7);
+          line-height: 1.5;
+          
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, $accent-color-1, $accent-color-2);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .experienceSection {
+    padding: 4rem 1.5rem;
+    
+    .sectionHeader {
+      margin-bottom: 3rem;
+      
+      h2 {
+        font-size: 2rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+    
+    .content {
+      .projectDetails {
+        padding: 1.5rem;
+        
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+      
+      .projectTabs {
+        .tabButton {
+          padding: 1rem 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+/* Animation class */
+.fadeInLocal :global(.animate-fade-in) {
+  animation: fadeIn 1s ease-out forwards;
+}

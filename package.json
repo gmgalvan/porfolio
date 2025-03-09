@@ -1,15 +1,33 @@
 {
-	"name": "",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"astro": "^2.0.10"
-	}
+  "name": "porfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.6.0",
+    "critters": "^0.0.25",
+    "negotiator": "^1.0.0",
+    "next": "15.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-swiper": "^0.1.5",
+    "sass": "^1.85.1",
+    "swiper": "^11.2.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/negotiator": "^0.6.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "sass-loader": "^16.0.5",
+    "typescript": "^5"
+  }
 }

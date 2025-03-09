@@ -1,0 +1,99 @@
+@use "sass:color" as color;
+
+// Design Tokens
+$bg-color: #f9fafb;
+$text-color: #1f2937;
+$border-color: #e5e7eb;
+$accent-color: #3b82f6;
+$transition-time: 0.3s;
+
+.certificationsSection {
+  padding: 4rem 2rem;
+  background-color: $bg-color;
+  color: $text-color;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .underline {
+      width: 5rem;
+      height: 0.25rem;
+      background-color: $accent-color;
+      margin: 0.5rem auto;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      opacity: 0.8;
+    }
+  }
+
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    .card {
+      background-color: #fff;
+      border: 1px solid $border-color;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform $transition-time ease, box-shadow $transition-time ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: $text-color;
+      }
+
+      .issuer {
+        font-size: 0.875rem;
+        color: color.adjust($text-color, $lightness: -20%);
+
+        margin-bottom: 0.5rem;
+      }
+
+      .date {
+        font-size: 0.875rem;
+        color: color.adjust($text-color, $lightness: -20%);
+
+        margin-bottom: 1rem;
+      }
+
+      a.viewLink {
+        display: inline-block;
+        color: $accent-color;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color $transition-time ease;
+
+        &:hover {
+          color: color.adjust($accent-color, $lightness: -10%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

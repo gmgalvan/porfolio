@@ -1,0 +1,246 @@
+// Modern gradient variables
+$gradient-start: #2e1f59;
+$gradient-end: #c09c53;
+$text-color: #ffffff;
+$accent-color: #ef5b31;
+$container-max-width: 1200px;
+
+.hero {
+  position: relative;
+  // Altura reducida para que quepa en la pantalla
+  min-height: 85vh;
+  background: linear-gradient(135deg, $gradient-start, $gradient-end);
+  color: $text-color;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/hero-pattern.svg');
+    opacity: 0.08;
+    z-index: 1;
+  }
+  
+  .container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; // Reducido de 3rem
+    margin-bottom: 2rem; // Reducido de 4rem
+    
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+      text-align: center;
+      margin-top: 1rem; // Reducido de 2rem
+    }
+  }
+  
+  .text-section {
+    flex: 1;
+    min-width: 300px;
+    
+    h1 {
+      font-size: 3.2rem; // Reducido de 4rem
+      font-weight: 800;
+      margin-bottom: 1rem; // Reducido de 1.5rem
+      line-height: 1.1;
+      
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+      
+      @media (max-width: 480px) {
+        font-size: 2.2rem;
+      }
+    }
+    
+    p {
+      font-size: 1.1rem; // Reducido de 1.25rem
+      line-height: 1.4;
+      margin-bottom: 1rem; // Reducido de 1.5rem
+      max-width: 580px;
+      opacity: 0.9;
+      
+      @media (max-width: 992px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  
+  .typing {
+    font-size: 1.3rem; // Reducido de 1.5rem
+    display: inline-block;
+    
+    span {
+      .cursor {
+        display: inline-block;
+        width: 2px;
+        margin-left: 2px;
+        animation: blink 1s step-end infinite;
+      }
+    }
+  }
+  
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .cta {
+    display: inline-block;
+    background-color: $accent-color;
+    color: white;
+    font-size: 1rem; // Reducido de 1.1rem
+    font-weight: 600;
+    padding: 0.7rem 1.8rem; // Reducido de 0.9rem 2rem
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(239, 91, 49, 0.4);
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 20px rgba(239, 91, 49, 0.5);
+    }
+    
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+  
+  .image-section {
+    flex: 0 0 320px; // Reducido de 400px
+    
+    @media (max-width: 992px) {
+      flex: 0 0 280px; // Reducido de 320px
+    }
+    
+    @media (max-width: 480px) {
+      flex: 0 0 240px; // Reducido de 280px
+    }
+  }
+  
+  .profile-img {
+    position: relative;
+    width: 100%;
+    height: 320px; // Reducido de 400px
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(255, 255, 255, 0.3); // Reducido de 6px
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); // Reducido de 0 20px 30px
+    
+    @media (max-width: 992px) {
+      height: 280px; // Reducido de 320px
+      margin: 0 auto;
+    }
+    
+    @media (max-width: 480px) {
+      height: 240px; // Reducido de 280px
+    }
+  }
+  
+  // Sección "My Technical Stack" - versión compacta
+  .tech-stack {
+    margin-top: 1.5rem; // Reducido de 2rem
+    
+    h3 {
+      text-align: center;
+      font-size: 1.5rem; // Reducido de 1.8rem
+      font-weight: 700;
+      margin-bottom: 1.5rem; // Reducido de 2rem
+      position: relative;
+      display: inline-block;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -8px; // Reducido de -10px
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px; // Reducido de 60px
+        height: 3px; // Reducido de 4px
+        background-color: $accent-color;
+        border-radius: 2px;
+      }
+    }
+    
+    .tech-categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem; // Reducido de 2.5rem
+      margin-top: 0.5rem; // Reducido de 1rem
+      
+      @media (max-width: 768px) {
+        gap: 1rem;
+      }
+    }
+    
+    .category-group {
+      flex: 1;
+      min-width: 180px; // Reducido de 200px
+      max-width: 250px; // Reducido de 280px
+      
+      h4 {
+        font-size: 1.1rem; // Reducido de 1.2rem
+        margin-bottom: 0.7rem; // Reducido de 1rem
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      
+      .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.7rem; // Reducido de 1rem
+      }
+    }
+    
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.7rem; // Reducido de 1rem
+      margin-top: 0.7rem; // Reducido de 1rem
+    }
+    
+    .icon {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 50px;
+      padding: 0.5rem 1rem; // Reducido de 0.7rem 1.2rem
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      
+      &:hover {
+        transform: translateY(-3px); // Reducido de -5px
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); // Reducido de 0 10px 20px
+      }
+      
+      span {
+        font-size: 0.85rem; // Reducido de 0.9rem
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,269 @@
+@use "sass:color" as color;
+
+$bg-color: #f9fafb;
+$text-color: #1f2937;
+$border-color: #e5e7eb;
+$accent-color: #3b82f6;
+$error-color: #ef4444;
+$success-color: #10b981;
+$disabled-color: #9ca3af;
+$transition-time: 0.3s;
+
+.contactSection {
+  padding: 5rem 2rem;
+  background-color: $bg-color;
+  color: $text-color;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .underline {
+      width: 5rem;
+      height: 0.25rem;
+      background-color: $accent-color;
+      margin: 0.5rem auto;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-top: 0.75rem;
+      opacity: 0.8;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  .contactInfo {
+    width: 100%;
+    
+    &.fullWidth {
+      .contactItems {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        
+        @media (min-width: 768px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 4rem;
+        }
+      }
+      
+      .infoItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+        min-width: 250px;
+
+        .icon {
+          width: 5rem;
+          height: 5rem;
+          background-color: rgba($accent-color, 0.1);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1.5rem;
+          
+          svg {
+            width: 2rem;
+            height: 2rem;
+            color: $accent-color;
+          }
+        }
+        
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 0.75rem;
+          color: $text-color;
+        }
+        
+        p {
+          font-size: 1.125rem;
+          color: rgba($text-color, 0.7);
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .infoItem {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        background-color: rgba($accent-color, 0.1);
+        border-radius: 50%;
+        color: $accent-color;
+        flex-shrink: 0;
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      p {
+        color: rgba($text-color, 0.8);
+      }
+    }
+  }
+
+  .contactForm {
+    flex: 1.5;
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: block;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: rgba($text-color, 0.9);
+      }
+
+      input, textarea {
+        padding: 0.75rem 1rem;
+        border: 1px solid $border-color;
+        border-radius: 0.5rem;
+        background-color: rgba($bg-color, 0.5);
+        color: $text-color;
+        transition: border-color $transition-time ease, box-shadow $transition-time ease;
+        font-family: inherit;
+
+        &:focus {
+          outline: none;
+          border-color: $accent-color;
+          box-shadow: 0 0 0 3px rgba($accent-color, 0.2);
+        }
+
+        &:disabled {
+          background-color: rgba($bg-color, 0.3);
+          cursor: not-allowed;
+          color: $disabled-color;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      button {
+        padding: 0.875rem 1.5rem;
+        background-color: $accent-color;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color $transition-time ease, transform $transition-time ease;
+        margin-top: 0.75rem;
+        align-self: flex-start;
+
+        &:hover:not(:disabled) {
+          background-color: color.adjust($accent-color, $lightness: -7%);
+          transform: translateY(-2px);
+        }
+
+        &:active:not(:disabled) {
+          transform: translateY(0);
+        }
+
+        &:disabled {
+          background-color: $disabled-color;
+          cursor: not-allowed;
+        }
+      }
+
+      .statusMessage {
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        
+        &.success {
+          background-color: rgba($success-color, 0.1);
+          color: $success-color;
+          border: 1px solid rgba($success-color, 0.2);
+        }
+        
+        &.error {
+          background-color: rgba($error-color, 0.1);
+          color: $error-color;
+          border: 1px solid rgba($error-color, 0.2);
+        }
+      }
+    }
+  }
+}
+
+// Animation for fade-in effect
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInLocal :global(.animate-fade-in) {
+  animation: fadeIn 1s ease-out forwards;
+}
