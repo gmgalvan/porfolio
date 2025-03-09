@@ -203,7 +203,7 @@ $transition-time: 0.3s;
 }
 
 /* Animation class */
-:global(.animate-fade-in) {
+.fadeInLocal :global(.animate-fade-in) {
   animation: fadeIn 1s ease-out forwards;
 }
 

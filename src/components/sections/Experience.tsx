@@ -2,7 +2,6 @@
 
 import { useRef, useEffect, useState } from "react";
 import { Dictionary } from "@/lib/getDictionary";
-import Link from "next/link";
 import styles from "./Experience.module.scss";
 
 // Define project data structure
@@ -231,8 +230,8 @@ const Experience = ({
     }
   ];
 
-  // Apply fade-in when the section comes into view
   useEffect(() => {
+    const currentSection = sectionRef.current; // capture the current value
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -244,16 +243,17 @@ const Experience = ({
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
+
 
   const activeProjectData = projects.find(
     (project) => project.id === activeProject
@@ -275,9 +275,8 @@ const Experience = ({
               <button
                 key={project.id}
                 onClick={() => setActiveProject(project.id)}
-                className={`${styles.tabButton} ${
-                  activeProject === project.id ? styles.active : ""
-                }`}
+                className={`${styles.tabButton} ${activeProject === project.id ? styles.active : ""
+                  }`}
               >
                 <h3>{project.title}</h3>
                 <p>

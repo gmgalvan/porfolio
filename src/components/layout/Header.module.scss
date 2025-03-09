@@ -1,10 +1,12 @@
+// Header.module.scss
+
 // Variables
 $header-bg-light: rgba(255, 255, 255, 0.8);
-$header-bg-dark: rgba(17, 24, 39, 0.8); // similar to dark:gray-900/80
+$header-bg-dark: rgba(17, 24, 39, 0.8);
 $backdrop-blur: 8px;
 $shadow-color: rgba(0, 0, 0, 0.1);
-$gradient-from: #3b82f6; // blue-600
-$gradient-to: #14b8a6;   // teal-500
+$gradient-from: #3b82f6;
+$gradient-to: #14b8a6;
 $text-primary: #111;
 $transition-duration: 0.3s;
 
@@ -24,17 +26,16 @@ $transition-duration: 0.3s;
   width: 100%;
   z-index: 50;
   transition: background-color $transition-duration ease, box-shadow $transition-duration ease;
-
-  // Default state
   background-color: transparent;
 
   &.scrolled {
     background-color: $header-bg-light;
+    backdrop-filter: blur($backdrop-blur);
+    box-shadow: 0 2px 8px $shadow-color;
+
     @media (prefers-color-scheme: dark) {
       background-color: $header-bg-dark;
     }
-    backdrop-filter: blur($backdrop-blur);
-    box-shadow: 0 2px 8px $shadow-color;
   }
 
   .header-container {
@@ -50,6 +51,7 @@ $transition-duration: 0.3s;
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
+
     .gradient-text {
       font-family: monospace;
       background: linear-gradient(to right, $gradient-from, $gradient-to);
@@ -59,16 +61,19 @@ $transition-duration: 0.3s;
   }
 
   .desktop-nav {
-    @media (max-width: 767px) {
-      display: none;
-    }
     display: flex;
     align-items: center;
     gap: 2rem;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     a {
       text-decoration: none;
       color: $text-primary;
       transition: color 0.3s ease;
+
       &:hover {
         color: $gradient-from;
       }
@@ -76,31 +81,36 @@ $transition-duration: 0.3s;
   }
 
   .mobile-nav-btn {
-    @media (min-width: 768px) {
-      display: none;
-    }
     font-size: 2rem;
     background: none;
     border: none;
     cursor: pointer;
-  }
 
-  .mobile-nav {
     @media (min-width: 768px) {
       display: none;
     }
+  }
+
+  .mobile-nav {
     background-color: $header-bg-light;
+    padding: 1rem;
+    box-shadow: 0 4px 8px $shadow-color;
+
     @media (prefers-color-scheme: dark) {
       background-color: $header-bg-dark;
     }
-    padding: 1rem;
-    box-shadow: 0 4px 8px $shadow-color;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
     a {
       display: block;
       padding: 0.5rem 0;
       text-decoration: none;
       color: $text-primary;
       transition: color 0.3s ease;
+
       &:hover {
         color: $gradient-from;
       }

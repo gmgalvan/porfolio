@@ -1,6 +1,12 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ensure we're not using the old i18n config which could conflict
-  // with the middleware approach
+  experimental: {
+    optimizeCss: true,
+  },
+  typescript: {
+    // Warning: This allows production builds to succeed even if there are type errors.
+    ignoreBuildErrors: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

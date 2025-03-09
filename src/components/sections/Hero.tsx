@@ -1,45 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useEffect, useState, useMemo } from "react";
 import Image from "next/image";
 import { Dictionary } from "@/lib/getDictionary";
 import styles from "./Hero.module.scss";
 
 const Hero = ({ dictionary, lang }: { dictionary: Dictionary; lang: string }) => {
-  // Typing effect states
   const [displayText, setDisplayText] = useState("");
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  // Palabras más cortas para no ocupar tanto espacio
-  const words = [
-    lang === "es" ? "Go & Python" : "Go & Python",
-    lang === "es" ? "AWS & GCP" : "AWS & GCP",
-    lang === "es" ? "Microservicios" : "Microservices",
-    lang === "es" ? "DevOps" : "DevOps"
-  ];
-
-  // Tecnologías más importantes organizadas por categoría (2 por categoría en lugar de 3)
-  const techStack = [
-    {
-      name: lang === "es" ? "Backend" : "Backend",
-      items: ["Go", "Python"]
-    },
-    {
-      name: lang === "es" ? "Cloud" : "Cloud",
-      items: ["AWS", "GCP"]
-    },
-    {
-      name: lang === "es" ? "DevOps" : "DevOps",
-      items: ["Kubernetes", "Docker"]
-    },
-    {
-      name: lang === "es" ? "Datos" : "Data",
-      items: ["PostgreSQL", "MongoDB"]
-    }
-  ];
+  const words = useMemo(
+    () => [
+      lang === "es" ? "Go & Python" : "Go & Python",
+      lang === "es" ? "AWS & GCP" : "AWS & GCP",
+      lang === "es" ? "Microservicios" : "Microservices",
+      lang === "es" ? "DevOps" : "DevOps"
+    ],
+    [lang]
+  );
 
   useEffect(() => {
     const word = words[currentWordIndex];
@@ -47,7 +27,7 @@ const Hero = ({ dictionary, lang }: { dictionary: Dictionary; lang: string }) =>
       if (!isDeleting) {
         setDisplayText(word.substring(0, displayText.length + 1));
         if (displayText.length === word.length) {
-          setTypingSpeed(1500); // Pause before deleting
+          setTypingSpeed(1500);
           setIsDeleting(true);
         } else {
           setTypingSpeed(150);
@@ -57,14 +37,14 @@ const Hero = ({ dictionary, lang }: { dictionary: Dictionary; lang: string }) =>
         if (displayText.length === 0) {
           setIsDeleting(false);
           setCurrentWordIndex((currentWordIndex + 1) % words.length);
-          setTypingSpeed(500); // Pause before typing next word
+          setTypingSpeed(500);
         } else {
           setTypingSpeed(50);
         }
       }
     }, typingSpeed);
     return () => clearTimeout(timeout);
-  }, [displayText, currentWordIndex, isDeleting, typingSpeed]);
+  }, [displayText, currentWordIndex, isDeleting, typingSpeed, words]);
 
   return (
     <section className={styles.hero}>
@@ -82,13 +62,6 @@ const Hero = ({ dictionary, lang }: { dictionary: Dictionary; lang: string }) =>
                 </span>
               </span>
             </div>
-            {/*
-            <div className="pt-3">
-              <Link href={`/${lang}#projects`} className={styles.cta}>
-                {dictionary.hero.cta}
-              </Link>
-            </div>
-            */}
           </div>
           <div className={styles["image-section"]}>
             <div className={styles["profile-img"]}>
@@ -107,11 +80,28 @@ const Hero = ({ dictionary, lang }: { dictionary: Dictionary; lang: string }) =>
             </div>
           </div>
         </div>
-        
+
         <div className={styles["tech-stack"]}>
           <h3>{lang === "es" ? "Mi Stack Técnico" : "My Technical Stack"}</h3>
           <div className={styles["tech-categories"]}>
-            {techStack.map((category) => (
+            {[
+              {
+                name: lang === "es" ? "Backend" : "Backend",
+                items: ["Go", "Python"]
+              },
+              {
+                name: lang === "es" ? "Cloud" : "Cloud",
+                items: ["AWS", "GCP"]
+              },
+              {
+                name: lang === "es" ? "DevOps" : "DevOps",
+                items: ["Kubernetes", "Docker"]
+              },
+              {
+                name: lang === "es" ? "Datos" : "Data",
+                items: ["PostgreSQL", "MongoDB"]
+              }
+            ].map((category) => (
               <div key={category.name} className={styles["category-group"]}>
                 <h4>{category.name}</h4>
                 <div className={styles["tech-icons"]}>

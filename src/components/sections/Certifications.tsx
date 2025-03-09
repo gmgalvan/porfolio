@@ -9,12 +9,12 @@ import "swiper/scss/pagination";
 import styles from "./Certifications.module.scss";
 import { Dictionary } from "@/lib/getDictionary";
 
-type Certification = {
-  title: string;
-  institution: string;
-  date: string;
-  link?: string;
-};
+//type Certification = {
+ // title: string;
+ // institution: string;
+ // date: string;
+ // link?: string;
+//};
 
 export default function Certifications({
   dictionary,

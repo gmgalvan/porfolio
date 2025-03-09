@@ -1,3 +1,5 @@
+@use "sass:color" as color;
+
 // Design Tokens
 $bg-color: #f9fafb;
 $text-color: #1f2937;
@@ -67,13 +69,15 @@ $transition-time: 0.3s;
 
       .issuer {
         font-size: 0.875rem;
-        color: darken($text-color, 20%);
+        color: color.adjust($text-color, $lightness: -20%);
+
         margin-bottom: 0.5rem;
       }
 
       .date {
         font-size: 0.875rem;
-        color: darken($text-color, 20%);
+        color: color.adjust($text-color, $lightness: -20%);
+
         margin-bottom: 1rem;
       }
 
@@ -86,7 +90,7 @@ $transition-time: 0.3s;
         transition: color $transition-time ease;
 
         &:hover {
-          color: darken($accent-color, 10%);
+          color: color.adjust($accent-color, $lightness: -10%);
           text-decoration: underline;
         }
       }

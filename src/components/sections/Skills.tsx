@@ -18,24 +18,32 @@ type SkillCategory = {
   skills: Skill[];
 };
 
-const Skills = ({ 
-  dictionary, 
-  lang 
-}: { 
-  dictionary: Dictionary; 
-  lang: string 
+// Define the expected structure of each category in the dictionary
+type CategoryData = {
+  title: string;
+  icon?: string;
+  skills?: Skill[];
+};
+
+const Skills = ({
+  dictionary,
+  lang
+}: {
+  dictionary: Dictionary;
+  lang: string
 }) => {
   const sectionRef = useRef<HTMLElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
 
   // Animation when section enters viewport
   useEffect(() => {
+    const currentSection = sectionRef.current; // Capture the current node
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-fade-in");
-            
+
             // Add staggered animation to skill items
             if (skillsRef.current) {
               const items = skillsRef.current.querySelectorAll(`.${styles.skillItem}`);
@@ -51,20 +59,20 @@ const Skills = ({
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
 
   // Extract skills data properly from JSON
   const skillsData: SkillCategory[] = Object.entries(dictionary.skills.categories).map(
-    ([key, value]: [string, any]) => ({
+    ([key, value]: [string, CategoryData]) => ({
       category: key,
       title: value.title,
       icon: value.icon || getDefaultIcon(key),
@@ -74,7 +82,7 @@ const Skills = ({
 
   // Get a default icon based on category name
   function getDefaultIcon(category: string): string {
-    const icons: {[key: string]: string} = {
+    const icons: { [key: string]: string } = {
       frontend: "code",
       backend: "server",
       design: "palette",
@@ -83,7 +91,6 @@ const Skills = ({
       languages: "globe",
       other: "tool"
     };
-    
     return icons[category.toLowerCase()] || "star";
   }
 
@@ -96,7 +103,6 @@ const Skills = ({
       4: lang === "es" ? "Avanzado" : "Advanced",
       5: lang === "es" ? "Experto" : "Expert"
     };
-    
     return labels[level as keyof typeof labels] || "";
   };
 
@@ -108,7 +114,7 @@ const Skills = ({
           <div className={styles.underline}></div>
           <p>{dictionary.skills.subtitle}</p>
         </div>
-        
+
         <div ref={skillsRef} className={styles.skillsGrid}>
           {skillsData.map((category, index) => (
             <div key={index} className={styles.categoryCard}>
@@ -118,7 +124,7 @@ const Skills = ({
                 </div>
                 <h3>{category.title}</h3>
               </div>
-              
+
               {category.skills.length > 0 ? (
                 <ul className={styles.skillsList}>
                   {category.skills.map((skill, i) => (
@@ -128,8 +134,8 @@ const Skills = ({
                         <span className={styles.skillLevel}>{getSkillLevelLabel(skill.level)}</span>
                       </div>
                       <div className={styles.skillBar}>
-                        <div 
-                          className={styles.skillFill} 
+                        <div
+                          className={styles.skillFill}
                           style={{ width: `${(skill.level / 5) * 100}%` }}
                         ></div>
                       </div>
@@ -151,7 +157,7 @@ const Skills = ({
 
 // Helper function to render appropriate category icon
 function getCategoryIcon(icon: string): JSX.Element {
-  const iconMap: {[key: string]: JSX.Element} = {
+  const iconMap: { [key: string]: JSX.Element } = {
     code: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="16 18 22 12 16 6"></polyline>
@@ -206,7 +212,7 @@ function getCategoryIcon(icon: string): JSX.Element {
       </svg>
     )
   };
-  
+
   return iconMap[icon] || iconMap["star"];
 }
 

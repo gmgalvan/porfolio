@@ -1,3 +1,5 @@
+@use "sass:color" as color;
+
 $bg-color: #f9fafb;
 $text-color: #1f2937;
 $border-color: #e5e7eb;
@@ -214,7 +216,7 @@ $transition-time: 0.3s;
         align-self: flex-start;
 
         &:hover:not(:disabled) {
-          background-color: darken($accent-color, 7%);
+          background-color: color.adjust($accent-color, $lightness: -7%);
           transform: translateY(-2px);
         }
 
@@ -262,6 +264,6 @@ $transition-time: 0.3s;
   }
 }
 
-:global(.animate-fade-in) {
-  animation: fadeIn 0.8s ease forwards;
+.fadeInLocal :global(.animate-fade-in) {
+  animation: fadeIn 1s ease-out forwards;
 }

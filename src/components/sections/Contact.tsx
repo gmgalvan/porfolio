@@ -7,11 +7,11 @@ import styles from "./Contact.module.scss";
 const Contact = ({
   dictionary,
   lang,
-  formEnabled = false, // Default value is false (form disabled)
+  formEnabled = false,
 }: {
   dictionary: Dictionary;
   lang: string;
-  formEnabled?: boolean; // Optional prop with boolean type
+  formEnabled?: boolean;
 }) => {
   const sectionRef = useRef<HTMLElement>(null);
   const [name, setName] = useState("");
@@ -19,12 +19,11 @@ const Contact = ({
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  // If you don't need the fade-in animation, you can remove the IntersectionObserver logic.
   useEffect(() => {
+    const currentSection = sectionRef.current; // capture the ref value
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Optionally add a class if you want a fade-in effect.
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-fade-in");
           }
@@ -33,18 +32,18 @@ const Contact = ({
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
 
-  // Handle form submission
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) {
@@ -178,8 +177,8 @@ const Contact = ({
                     required
                   ></textarea>
                 </div>
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={status === "loading"}
                 >
                   {status === "loading"
