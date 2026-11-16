@@ -1,6 +1,36 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[build.environment]
+  NODE_VERSION = "22"
+
+# Send visitors on "/" to their browser language, default English.
+[[redirects]]
+  from = "/"
+  to = "/es/"
+  status = 302
+  force = true
+  conditions = { Language = ["es"] }
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true
+
+[[headers]]
+  for = "/*.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+# Social preview image is generated without a file extension.
+[[headers]]
+  for = "/*/opengraph-image"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

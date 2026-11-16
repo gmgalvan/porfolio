@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Guillermo Galvan
 
-## Getting Started
+Minimal bilingual (EN/ES) portfolio built with Next.js 16 as a fully static site.
 
-First, run the development server:
+## Edit content
+
+All text lives in [`src/content.ts`](src/content.ts) — experience, skills, certifications, links and both translations.
+Styles are in [`src/app/globals.css`](src/app/globals.css).
+
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # static output in ./out
+npm start       # serve ./out locally
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Requires Node 20.9+ (Netlify uses Node 22, set in `netlify.toml`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## SEO & AI discoverability
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Generated at build time from `src/content.ts`, so they never go stale:
 
-## Learn More
+- `/sitemap.xml`, `/robots.txt` (search engines and AI crawlers explicitly allowed)
+- `/llms.txt` and `/llms-full.txt` ([llmstxt.org](https://llmstxt.org)) for AI agents
+- JSON-LD `Person` + `ProfilePage` structured data, canonical + hreflang (en/es/x-default)
+- Open Graph / Twitter cards with a generated preview image (`/en/opengraph-image`)
 
-To learn more about Next.js, take a look at the following resources:
+Absolute URLs use Netlify's `$URL` (your primary domain). Set `SITE_URL` in Netlify env vars to override.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy (Netlify)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`netlify.toml` already configures everything: build command `npm run build`, publish directory `out`.
+No Netlify Next.js plugin is needed. Visitors hitting `/` are redirected to `/es/` or `/en/` based on their browser language.

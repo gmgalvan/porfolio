@@ -1,12 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    optimizeCss: true,
-  },
-  typescript: {
-    // Warning: This allows production builds to succeed even if there are type errors.
-    ignoreBuildErrors: true,
-  },
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // Fully static site: `next build` writes plain HTML/CSS to ./out,
+  // which Netlify serves directly (no server runtime or plugin needed).
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
