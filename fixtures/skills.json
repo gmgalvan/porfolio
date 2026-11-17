@@ -1,0 +1,9 @@
+[
+  { "id": "aws", "name": "AWS", "kind": "technology", "categories": ["Run"], "aliases": [], "yearsOfExperience": 2.7 },
+  { "id": "lambda", "name": "Lambda", "kind": "technology", "categories": ["Run"], "parent": "aws", "aliases": [], "yearsOfExperience": 2.7 },
+  { "id": "terraform", "name": "Terraform", "kind": "technology", "categories": ["Release & Deploy"], "aliases": [], "yearsOfExperience": 2.7 },
+  { "id": "kubernetes", "name": "Kubernetes", "kind": "technology", "categories": ["Run"], "aliases": [], "yearsOfExperience": 1.2 },
+  { "id": "go", "name": "Go", "kind": "technology", "categories": ["Code"], "aliases": ["Golang"], "yearsOfExperience": 4.8 },
+  { "id": "python", "name": "Python", "kind": "technology", "categories": [], "aliases": [], "yearsOfExperience": 3.6 },
+  { "id": "cloud-migration", "name": "Cloud migration", "kind": "practice", "categories": [], "aliases": [] }
+]

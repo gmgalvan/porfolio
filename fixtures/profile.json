@@ -1,0 +1,75 @@
+{
+  "profile": {
+    "name": "Alex Example",
+    "title": "Senior Example & Cloud Engineer | Example Backend Engineer | Example AI Infrastructure and Operations",
+    "contact": {
+      "email": "alex@example.com",
+      "phone": "+00 000 000 0000",
+      "location": "Example City · Remote",
+      "links": { "linkedin": "https://www.linkedin.com/in/example", "github": "https://github.com/example", "website": null }
+    }
+  },
+  "summaries": [
+    {
+      "focus": "cloud-devops",
+      "text": "Example summary: fake data used only for local development (CV_DATA=fixtures).\n\nA second paragraph to check paragraph splitting."
+    }
+  ],
+  "education": [
+    { "id": "example-degree", "degree": "Example Engineering Degree", "institution": "Example University", "year": 2015 }
+  ],
+  "certifications": [
+    {
+      "id": "example-cloud-architect",
+      "name": "Example Cloud Architect",
+      "kind": "certification",
+      "issuer": "Example Cloud",
+      "issuedDate": "2025-06",
+      "expiresDate": "2028-06",
+      "credentialId": "EX-123",
+      "credentialUrl": "https://example.com/verify/EX-123",
+      "skills": ["aws"],
+      "status": "active"
+    },
+    {
+      "id": "example-intro-course",
+      "name": "Example Intro Course",
+      "kind": "course",
+      "issuer": "Example Academy",
+      "issuedDate": "2024-02",
+      "skills": ["python"],
+      "status": "no-expiry"
+    },
+    {
+      "id": "example-iac-associate",
+      "name": "Example IaC Associate",
+      "kind": "certification",
+      "issuer": "Example IaC Corp",
+      "issuedDate": "2022-10",
+      "expiresDate": "2024-10",
+      "skills": ["terraform"],
+      "status": "expired"
+    },
+    {
+      "id": "example-k8s-fundamentals",
+      "name": "Example Kubernetes Fundamentals",
+      "kind": "certification",
+      "issuer": "Example Foundation",
+      "issuedDate": "2020-09",
+      "skills": ["kubernetes"],
+      "status": "no-expiry"
+    },
+    {
+      "id": "example-undated-course",
+      "name": "Example Undated Course",
+      "kind": "course",
+      "issuer": "Example Academy",
+      "skills": [],
+      "status": "no-expiry"
+    }
+  ],
+  "languages": [
+    { "id": "spanish", "name": "Spanish", "level": "native" },
+    { "id": "english", "name": "English", "level": "B2", "notes": "Example note" }
+  ]
+}

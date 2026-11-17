@@ -1,0 +1,44 @@
+[
+  {
+    "id": "example-platform-migration",
+    "headline": "Platform migration",
+    "employer": { "name": "Example Consulting", "confidential": false },
+    "customer": { "name": "Secret Health Inc", "alias": "US healthcare company", "confidential": true },
+    "startDate": "2024-03",
+    "role": "DevOps Engineer",
+    "teamSize": "4",
+    "projectDescription": "Fake project: migration of an example platform to the cloud.",
+    "responsibilities": ["Built example pipelines", "Wrote example infrastructure as code"],
+    "results": ["Example result: faster deployments"],
+    "tools": ["aws", "lambda", "terraform"],
+    "practices": ["cloud-migration"]
+  },
+  {
+    "id": "example-data-pipeline",
+    "headline": "Data pipeline",
+    "employer": { "name": "Example Consulting", "confidential": false },
+    "customer": { "name": "Hidden Corp", "confidential": true },
+    "startDate": "2023-01",
+    "endDate": "2024-02",
+    "role": "Backend Developer",
+    "projectDescription": "Fake project: an example data pipeline.",
+    "responsibilities": ["Built example Go services"],
+    "results": [],
+    "tools": ["go", "kubernetes"],
+    "practices": []
+  },
+  {
+    "id": "example-chatbot",
+    "headline": "Customer service chatbot",
+    "employer": { "name": "Example Hosting", "confidential": false },
+    "customer": null,
+    "startDate": "2019-06",
+    "endDate": "2022-12",
+    "role": "Software Developer",
+    "projectDescription": "Fake project: an example chatbot.",
+    "responsibilities": ["Built an example chatbot backend"],
+    "results": [],
+    "tools": ["python", "go"],
+    "practices": []
+  }
+]

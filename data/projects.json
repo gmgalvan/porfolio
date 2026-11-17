@@ -1,0 +1,752 @@
+[
+  {
+    "id": "project-2017-06",
+    "headline": "Customer service automation platform for domain registration and web hosting",
+    "startDate": "2017-06",
+    "endDate": "2018-12",
+    "role": "Software Web Developer",
+    "teamSize": "3-4",
+    "projectDescription": "Customer service chatbot for a domain registration and web hosting provider. It recommended hosting and domain plans to customers, redirected them to human support when needed, and improved the overall customer experience.",
+    "responsibilities": [
+      "Designed and developed the chatbot architecture on IBM Watson Assistant to recommend plans and route customers to support",
+      "Built the first version of the chatbot without external APIs, using a Naive Bayes classifier for intent detection",
+      "Built NLP pipelines for intent classification and text identification",
+      "Used Jupyter to test, analyze, and classify data flows",
+      "Developed REST services in Go (Gorilla Mux) that consumed the Watson Assistant API",
+      "Developed a Flask service for customer star ratings and chatbot performance statistics",
+      "Designed and implemented the MongoDB database for the chatbot system",
+      "Developed the chatbot web interface with Vue.js",
+      "Developed web scraping scripts for automation and data extraction using Selenium, Scrapy, and Beautiful Soup",
+      "Transformed manual workflow processes into automations",
+      "Containerized the chatbot and the company's site builder with Docker, replacing a manual zip-based deployment flow"
+    ],
+    "results": [
+      "Reduced the volume of plan-offer requests handled by the human team by automating plan recommendations",
+      "Routed customers to human support correctly when their request required it"
+    ],
+    "tools": [
+      "go",
+      "gorilla-mux",
+      "python",
+      "flask",
+      "vue-js",
+      "mongodb",
+      "docker",
+      "docker-compose",
+      "ibm-cloud",
+      "ibm-watson-assistant",
+      "rasa",
+      "scrapy",
+      "beautiful-soup",
+      "selenium",
+      "pandas",
+      "jupyter",
+      "github"
+    ],
+    "practices": [
+      "chatbot-development",
+      "nlp",
+      "web-scraping",
+      "rest-api-design",
+      "workflow-automation",
+      "containerization"
+    ],
+    "employer": {
+      "name": "Neubox",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": null
+  },
+  {
+    "id": "project-2019-02",
+    "headline": "AWS managed services and cloud consulting",
+    "startDate": "2019-02",
+    "endDate": "2019-11",
+    "role": "DevOps Engineer",
+    "teamSize": "3-4",
+    "projectDescription": "AWS consulting and managed services for US and Mexican customers: migrating their workloads to AWS, operating their infrastructure, handling their support requests, and giving them monthly visibility into their AWS costs with optimization recommendations.",
+    "responsibilities": [
+      "Identified the manual monthly AWS cost reporting as a bottleneck and automated it: a Python service pulled cost and usage data from the AWS APIs for all client accounts, generated a PDF report per client with consumption and recommendations, and emailed it to them",
+      "Scheduled report generation with Celery and Celery Beat, and built a Flask and Vue.js admin interface with Cognito login to manage clients and report runs, deployed on EC2 with Docker Compose",
+      "Designed and built a data lake for a client's financial analysis with S3, Glue, Athena, Lambda, and Pandas, with QuickSight dashboards and the infrastructure defined in CloudFormation",
+      "Participated in migrating a client's WordPress site to AWS Elastic Beanstalk, using EFS for shared storage",
+      "Operated client workloads migrated to AWS (EC2, RDS, load balancers) and resolved their support tickets through Zendesk: networking, IAM permissions, security group and port changes"
+    ],
+    "results": [
+      "Cut monthly cost report preparation from two weeks of manual work to a few hours of automated overnight runs"
+    ],
+    "tools": [
+      "aws",
+      "ec2",
+      "s3",
+      "rds",
+      "efs",
+      "elastic-load-balancing",
+      "elastic-beanstalk",
+      "cognito",
+      "cloudwatch-events",
+      "ecr",
+      "lambda",
+      "glue",
+      "athena",
+      "quicksight",
+      "codebuild",
+      "codepipeline",
+      "python",
+      "pandas",
+      "flask",
+      "celery",
+      "vue-js",
+      "javascript",
+      "docker-compose",
+      "terraform",
+      "cloudformation",
+      "zendesk"
+    ],
+    "practices": [
+      "cost-optimization",
+      "automation",
+      "cloud-migration",
+      "data-lake",
+      "infrastructure-as-code",
+      "managed-services",
+      "cloud-consulting"
+    ],
+    "employer": {
+      "name": "InBest Cloud",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US and Mexican customers",
+      "alias": null,
+      "confidential": false
+    }
+  },
+  {
+    "id": "project-2019-11",
+    "headline": "Reporting, messaging, and event data lake for a patient relationship management platform",
+    "startDate": "2019-11",
+    "endDate": "2021-07",
+    "role": "Go Developer",
+    "teamSize": "5",
+    "projectDescription": "Cloud patient relationship management platform for US dental and medical practices: appointment reminders, two-way patient messaging, surveys, and reporting, helping practices reduce no-shows and keep patients engaged.",
+    "responsibilities": [
+      "Developed features and maintained the Go microservices for reporting and messaging, built with Echo and documented with Swagger",
+      "Wrote and optimized the reporting queries, both SQL on PostgreSQL and data reads on Bigtable",
+      "Built, extended, and maintained a Go data lake service that consumed events from all platform microservices through Pub/Sub and stored them in Bigtable",
+      "Debugged event delivery through Pub/Sub between the microservices, the data lake, and reporting",
+      "Participated in defining Protocol Buffers contracts for platform events and wrote the Go libraries the microservices used to publish and persist events with them",
+      "Participated in migrating reporting data from Bigtable to PostgreSQL, writing Java code for the Apache Beam pipelines and configuring them on Dataflow",
+      "Migrated the reporting frontend from Mithril.js to Vue.js and implemented charts and data visualizations with D3",
+      "Shipped the microservices through CI/CD: GitLab CI for builds and tests, Tekton pipelines for deployments to GKE, and an internal tool for traffic switching"
+    ],
+    "results": [
+      "Lowered database costs by moving reporting data from Bigtable, which was expensive and unnecessary for reporting workloads, to PostgreSQL",
+      "Delivered more granular reports",
+      "Moved the reporting frontend to Vue.js, a more widely used and standard framework than Mithril.js"
+    ],
+    "tools": [
+      "go",
+      "echo",
+      "swagger",
+      "java",
+      "apache-beam",
+      "dataflow",
+      "pub-sub",
+      "bigtable",
+      "postgresql",
+      "sql",
+      "protocol-buffers",
+      "vue-js",
+      "mithril-js",
+      "d3-js",
+      "gitlab-ci",
+      "tekton",
+      "kubernetes",
+      "gke",
+      "google-cloud"
+    ],
+    "practices": [
+      "full-stack-development",
+      "microservices",
+      "event-driven-architecture",
+      "data-lake",
+      "data-migration",
+      "ci-cd",
+      "data-visualization"
+    ],
+    "employer": {
+      "name": "TechbridgeIT",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US patient relationship management SaaS company",
+      "alias": "US patient relationship management SaaS company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2021-07",
+    "headline": "Dispatching and ELD integrations for Kamion, a carrier TMS",
+    "startDate": "2021-07",
+    "endDate": "2023-01",
+    "role": "Backend Go Developer",
+    "teamSize": "4-5",
+    "projectDescription": "Kamion, Loadsmart's transportation management system (TMS) for US trucking carriers: dispatching, driver management, accounting, and ELD integrations, connecting carriers with freight to reduce empty miles.",
+    "responsibilities": [
+      "Developed features and maintained the dispatcher team's Go microservices, built on the Go standard library: load assignment, trip tracking, and the data behind the dispatcher views",
+      "Built Go integrations with ELD provider APIs (Samsara, KeepTruckin, Omnitracs, Verizon Connect, among others) to pull truck GPS location and vehicle status, and connected them to the internal services that consumed this data",
+      "Optimized and improved the PostgreSQL queries behind reports",
+      "Processed large report result sets in batches through SQS",
+      "Implemented distributed locks with etcd in Go so concurrent processes could not duplicate or overwrite data",
+      "Participated in migrating the microservices from GKE to AWS: adapted the Go code and configured their CircleCI pipelines and environment variables",
+      "Troubleshot microservices running on Kubernetes: failing pods, logs, and deployment configuration",
+      "Built Superset queries and dashboards with the metrics the product team requested",
+      "Maintained the dispatcher Angular frontend: debugging and small features"
+    ],
+    "results": [
+      "Made reports load faster through query optimization and batch processing"
+    ],
+    "tools": [
+      "go",
+      "postgresql",
+      "sql",
+      "sqs",
+      "etcd",
+      "aws",
+      "google-cloud",
+      "gke",
+      "kubernetes",
+      "circleci",
+      "superset",
+      "angular"
+    ],
+    "practices": [
+      "microservices",
+      "third-party-api-integrations",
+      "concurrency-control",
+      "batch-processing",
+      "query-optimization",
+      "cloud-migration"
+    ],
+    "employer": {
+      "name": "Loadsmart",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": null
+  },
+  {
+    "id": "project-2023-03",
+    "headline": "Backend API for an IT infrastructure monitoring platform",
+    "startDate": "2023-03",
+    "endDate": "2023-09",
+    "role": "Senior Go Developer",
+    "teamSize": "8",
+    "projectDescription": "SaaS platform for IT infrastructure monitoring and AIOps: collects metrics, events, and models from servers, networks, cloud, and applications so IT teams can detect and correlate incidents.",
+    "responsibilities": [
+      "Maintained and extended the platform's Go backend API, handling thousands of concurrent requests: GraphQL for the Angular frontend and gRPC between services",
+      "Wrote unit tests across the Go backend and kept coverage high as the code changed",
+      "Optimized GraphQL data fetching so the frontend got the right data in fewer calls, with light changes on the Angular side",
+      "Optimized MongoDB queries, the Go data access code, and service performance",
+      "Participated in designing gRPC contracts and the structure of services, and updated Protocol Buffers definitions",
+      "Built small internal features to hydrate the data shown in the frontend",
+      "Reduced technical debt through refactors",
+      "Onboarded new junior developers to the codebase"
+    ],
+    "results": [
+      "Raised unit test coverage of the Go backend to 90%",
+      "Data loaded faster in the frontend, with more information and fixed filters"
+    ],
+    "tools": [
+      "go",
+      "grpc",
+      "protocol-buffers",
+      "graphql",
+      "mongodb",
+      "angular",
+      "kubernetes",
+      "gke",
+      "spinnaker",
+      "google-cloud"
+    ],
+    "practices": [
+      "microservices",
+      "unit-testing",
+      "api-design",
+      "performance-optimization",
+      "refactoring",
+      "mentoring"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US IT infrastructure monitoring (AIOps) company",
+      "alias": "US IT infrastructure monitoring (AIOps) company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2023-09",
+    "headline": "Cloud infrastructure, document OCR, and claims data workflows for a healthcare analytics company",
+    "startDate": "2023-09",
+    "endDate": "2024-04",
+    "role": "Middle DevOps Cloud Engineer",
+    "teamSize": "5-6",
+    "projectDescription": "Healthcare analytics platform for US health plans: payment integrity, risk adjustment, and quality reporting, helping payers pay claims accurately and improve care at lower cost.",
+    "responsibilities": [
+      "Translated cloud architectures designed by the architect and data scientists into Terraform, deployed them through Terraform Cloud, and reviewed the designs, suggesting changes where needed",
+      "Defined and documented the team's Terraform standards and best practices, and advised the architect and data scientists on implementing their designs in Terraform Cloud",
+      "Implemented the IaC branch strategy, with one branch per environment",
+      "Configured Octopus Deploy pipelines to deploy Lambda functions across environments, with source code in Bitbucket",
+      "Configured private connectivity between Pega Cloud and the client's AWS VPC with PrivateLink, keeping traffic on the AWS network instead of the public internet",
+      "Built secure VPCs with API Gateway routing to Lambda endpoints, and OpenSearch inside the VPC for search",
+      "Implemented an OCR pipeline for medical records and claims designed by the architect (S3, EventBridge, Step Functions, async Textract, Lambda, DynamoDB CDC), suggesting improvements along the way",
+      "Implemented a second OCR workflow for claims uploaded to S3 using John Snow Labs, with Glue processing the extracted data, from the team's designs",
+      "Optimized S3 data loading so large claim datasets were processed faster",
+      "Provisioned SageMaker with Terraform for a data scientist's task",
+      "Deployed and configured Weaviate on ECS as the vector store for a RAG workflow, provisioned with Terraform"
+    ],
+    "results": [
+      "Established a DevOps workflow for infrastructure as code, from design to per-environment deployment",
+      "Large claim datasets processed faster after the S3 optimizations"
+    ],
+    "tools": [
+      "aws",
+      "terraform",
+      "terraform-cloud",
+      "octopus-deploy",
+      "bitbucket",
+      "vpc",
+      "privatelink",
+      "api-gateway",
+      "lambda",
+      "opensearch",
+      "s3",
+      "eventbridge",
+      "step-functions",
+      "textract",
+      "dynamodb",
+      "glue",
+      "lake-formation",
+      "sagemaker",
+      "bedrock",
+      "john-snow-labs",
+      "weaviate",
+      "ecs",
+      "eks",
+      "route-53",
+      "nestjs",
+      "typescript"
+    ],
+    "practices": [
+      "infrastructure-as-code",
+      "ci-cd",
+      "cloud-networking",
+      "serverless",
+      "event-driven-architecture",
+      "data-pipelines",
+      "rag",
+      "performance-optimization",
+      "technical-documentation"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US healthcare analytics company",
+      "alias": "US healthcare analytics company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2024-04",
+    "headline": "Cloud migration and CDC infrastructure for a healthcare services company",
+    "startDate": "2024-04",
+    "endDate": "2024-09",
+    "role": "Middle DevOps Cloud Engineer",
+    "teamSize": "5-6",
+    "projectDescription": "US healthcare services company coordinating non-emergency medical transportation for Medicaid and Medicare members, plus personal care and remote patient monitoring.",
+    "responsibilities": [
+      "Wrote the Pulumi (TypeScript) infrastructure, with the team and from the architect's designs, for migrating an on-premise DB2 database to RDS with AWS DMS change data capture, across many subsystems",
+      "Integrated DMS with Glue and Lake Formation for data migration and transformation workflows",
+      "Built the GitLab CI pipelines that deployed the Pulumi code, with reusable components and templates for the team's workflows and ephemeral environments",
+      "Configured OIDC authentication between GitLab and AWS, removing long-lived credentials from the pipelines",
+      "Managed environments and secrets with Pulumi Cloud and Pulumi ESC",
+      "Implemented the architect's account governance in Pulumi where possible: AWS Organizations OUs, SCPs, and Control Tower",
+      "Built AWS cost dashboards in Cost Explorer, set up budgets, and proposed cost-saving alternatives"
+    ],
+    "results": [
+      "Strengthened pipeline security by replacing long-lived AWS credentials with OIDC",
+      "Cost savings once the client acted on the cost dashboards and recommendations"
+    ],
+    "tools": [
+      "aws",
+      "pulumi",
+      "typescript",
+      "pulumi-cloud",
+      "pulumi-esc",
+      "gitlab-ci",
+      "oidc",
+      "dms",
+      "rds",
+      "db2",
+      "glue",
+      "lake-formation",
+      "aws-organizations",
+      "scp",
+      "control-tower",
+      "cost-explorer",
+      "aws-budgets"
+    ],
+    "practices": [
+      "infrastructure-as-code",
+      "ci-cd",
+      "cloud-migration",
+      "change-data-capture",
+      "cloud-governance",
+      "cost-optimization",
+      "security",
+      "ephemeral-environments"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US healthcare logistics company",
+      "alias": "US healthcare logistics company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2024-09",
+    "headline": "AI chatbot integration into a media measurement platform",
+    "startDate": "2024-09",
+    "endDate": "2025-02",
+    "role": "Senior DevOps Cloud Engineer",
+    "teamSize": "6-7",
+    "projectDescription": "Media measurement and advertising analytics platform for TV and streaming, used by advertisers, agencies, and media owners to plan, buy, and measure campaigns.",
+    "responsibilities": [
+      "Integrated the new microservices of an AI chatbot (beta), which generated queries and returned personalized reports and data, into the existing platform",
+      "Adapted CI/CD for the new microservices in CircleCI and Harness, including environment variable configuration",
+      "Configured the new microservices in the Bazel and Gazelle monorepo",
+      "Adapted Helm charts from an existing structure to deploy the microservices on Kubernetes with blue-green deployments",
+      "Wrote OPA / Rego policies restricting calls between services and limiting chatbot access to company users",
+      "Set up local development for the new microservices with Tilt",
+      "Provisioned with Terraform the access and permissions the chatbot needed in AWS Bedrock and Snowflake",
+      "Maintained and helped develop the Go and Python backend microservices"
+    ],
+    "results": [
+      "Chatbot beta deployed to all four environments (dev, staging, pre-production, production) with the full deployment flow in place"
+    ],
+    "tools": [
+      "aws",
+      "bedrock",
+      "snowflake",
+      "terraform",
+      "circleci",
+      "harness",
+      "bazel",
+      "gazelle",
+      "kubernetes",
+      "helm",
+      "opa",
+      "rego",
+      "tilt",
+      "go",
+      "python"
+    ],
+    "practices": [
+      "ci-cd",
+      "infrastructure-as-code",
+      "policy-as-code",
+      "blue-green-deployments",
+      "monorepo",
+      "generative-ai-infrastructure"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US media measurement and advertising technology company",
+      "alias": "US media measurement and advertising technology company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2024-11",
+    "headline": "Go microservices assessment for a life sciences quality management SaaS company",
+    "startDate": "2024-11",
+    "endDate": "2024-12",
+    "role": "Senior DevOps Cloud Engineer",
+    "teamSize": "1",
+    "projectDescription": "Quality management system (QMS) SaaS for life sciences companies, built as Go microservices on AWS and Kubernetes.",
+    "responsibilities": [
+      "Assessed the client's Go microservices monorepo (architecture, security, performance, and quality assurance) through interview sessions with the team and a review of the codebase",
+      "Reviewed the CI/CD pipelines (GitHub Actions, Argo CD, Trivy, Dependabot) and the ongoing rework from per-customer stacks to a multi-tenant architecture",
+      "Identified security gaps: static API keys without granular authorization, secrets kept in environment variables, and no Go-specific security scanning",
+      "Identified observability gaps: no distributed tracing or profiling beyond Datadog, and no load testing",
+      "Wrote the assessment report with prioritized recommendations and a 0–6 month roadmap: repository interfaces and hexagonal architecture, centralized secret management, gosec and govulncheck in CI, OpenTelemetry tracing, pprof profiling, k6 load testing, and SLOs"
+    ],
+    "results": [
+      "Delivered the assessment report with a prioritized remediation roadmap"
+    ],
+    "tools": [
+      "go"
+    ],
+    "practices": [
+      "architecture-assessment",
+      "security-assessment",
+      "devsecops",
+      "observability",
+      "technical-writing"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "European life sciences quality management SaaS company",
+      "alias": "European life sciences quality management SaaS company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2025-02",
+    "headline": "Kafka streaming and container platform on AWS for a healthcare services company",
+    "startDate": "2025-02",
+    "endDate": "2025-07",
+    "role": "Senior DevOps Cloud Engineer",
+    "teamSize": "6-7",
+    "projectDescription": "US healthcare services company coordinating non-emergency medical transportation for Medicaid and Medicare members, plus personal care and remote patient monitoring.",
+    "responsibilities": [
+      "Built Amazon MSK in Pulumi (TypeScript) from the architect's designs, so the microservices of a new project could stream events through Kafka",
+      "Proposed and designed the strategy for managing Kafka access across teams and their data in MSK, and built Pulumi (TypeScript) libraries, on top of existing Pulumi modules, that teams used to enforce the access policies and scope their permissions",
+      "Configured MSK IAM and SCRAM authentication across environments",
+      "Built EKS clusters and ECS Fargate in Pulumi for the teams to run the new microservices",
+      "Configured CloudWatch and Datadog monitoring for EKS and MSK where needed",
+      "Kept building reusable GitLab CI templates and components for the teams' pipelines",
+      "Managed environments, secrets, and configuration with Pulumi Cloud and Pulumi ESC",
+      "Set up cost allocation tags and configured the cost plugin in the client's Backstage developer portal",
+      "Built AWS cost dashboards and budgets in Cost Explorer, and proposed cost-saving alternatives"
+    ],
+    "results": [
+      "Kafka streaming platform with IAM and SCRAM authentication ready across environments for the new project's microservices"
+    ],
+    "tools": [
+      "aws",
+      "pulumi",
+      "pulumi-cloud",
+      "pulumi-esc",
+      "typescript",
+      "msk",
+      "kafka",
+      "eks",
+      "kubernetes",
+      "ecs",
+      "fargate",
+      "gitlab-ci",
+      "cloudwatch",
+      "datadog",
+      "backstage",
+      "cost-explorer",
+      "aws-budgets"
+    ],
+    "practices": [
+      "infrastructure-as-code",
+      "event-streaming",
+      "container-orchestration",
+      "observability",
+      "cost-optimization",
+      "ci-cd",
+      "platform-engineering"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US healthcare logistics company",
+      "alias": "US healthcare logistics company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2025-07",
+    "headline": "Air-gapped, on-premise NVIDIA GPU platform for AI inference at a government finance ministry",
+    "startDate": "2025-07",
+    "endDate": "2025-12",
+    "role": "Senior DevOps Cloud Engineer",
+    "teamSize": "4",
+    "projectDescription": "Air-gapped, on-premise AI platform on NVIDIA GPUs for a government finance ministry, so it could run AI models and AI-based cybersecurity solutions inside its own data center.",
+    "responsibilities": [
+      "Installed and configured NVIDIA Base Command Manager (BCM) 10 from scratch on the client's new GPU servers: added nodes to the cluster, configured cluster networking and VMs, and provisioned Kubernetes",
+      "Designed the cluster topology: control plane and etcd node counts, GPU worker nodes for AI workloads, and the compute capacity of each",
+      "Installed Kubernetes on bare-metal NVIDIA L40S GPU nodes with BCM, following NVIDIA blueprints, and proposed the networking and storage the cluster needed",
+      "Configured GPU support with the NVIDIA GPU Operator and GPU scheduling with the NVIDIA KAI Scheduler",
+      "Exposed cluster services with NGINX Ingress and MetalLB",
+      "Set up Harbor as the cluster's internal container registry and brought NGC images and models into the air-gapped environment",
+      "Deployed Nemotron and Llama models with NVIDIA NIM (NIM Service, NIM Cache) and Triton Inference Server",
+      "Deployed NVIDIA Morpheus for phishing and ransomware detection",
+      "Developed a real-time ransomware monitoring application on the Morpheus detection model: it scored every process on each machine with a risk percentage, stored the results in MongoDB, and showed them on a live dashboard",
+      "Set up GPU monitoring with DCGM Exporter, Prometheus, and Grafana",
+      "Built deployment workflows and pipelines with GitHub Actions"
+    ],
+    "results": [
+      "Platform running in production, fully air-gapped, serving AI models and the solutions built on top of it"
+    ],
+    "tools": [
+      "nvidia-base-command-manager",
+      "nvidia-ai-enterprise",
+      "nvidia-l40s",
+      "kubernetes",
+      "nvidia-gpu-operator",
+      "nvidia-kai-scheduler",
+      "nginx-ingress",
+      "metallb",
+      "harbor",
+      "ngc",
+      "nvidia-nim",
+      "triton-inference-server",
+      "nemotron",
+      "llama",
+      "nvidia-morpheus",
+      "dcgm",
+      "prometheus",
+      "grafana",
+      "mongodb",
+      "github",
+      "github-actions",
+      "claude-code"
+    ],
+    "practices": [
+      "ai-infrastructure",
+      "model-serving",
+      "bare-metal-kubernetes",
+      "gpu-orchestration",
+      "air-gapped-environments",
+      "observability",
+      "ci-cd",
+      "ai-for-cybersecurity"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "Latin American government finance ministry",
+      "alias": "Latin American government finance ministry",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2026-01",
+    "headline": "Authentication service migration from Docker Compose to AKS for a financial compliance SaaS company",
+    "startDate": "2026-01",
+    "endDate": "2026-06",
+    "role": "Senior DevOps Cloud Engineer",
+    "teamSize": "3",
+    "projectDescription": "Risk management and compliance SaaS for US financial institutions (banks, credit unions, mortgage companies): vendor and contract management, regulatory compliance, and audit.",
+    "responsibilities": [
+      "Migrated the C# authentication service, which handled authentication for all platform services and depended heavily on its database, from Docker Compose to AKS, implementing the architect's design",
+      "Wrote the Kubernetes configuration and manifests from scratch, and designed and built a Helm umbrella chart for the services",
+      "Managed the AKS cluster with Terraform, organized in infrastructure layers",
+      "Built GitHub Actions workflows for deployments and for the authentication service's CI",
+      "Set up the service's database configuration and secrets with Azure Key Vault, with documented secret management",
+      "Built Claude Code skills to support the migration work"
+    ],
+    "results": [
+      "Authentication service running on AKS, with repeatable Helm-based deployments"
+    ],
+    "tools": [
+      "azure",
+      "aks",
+      "kubernetes",
+      "helm",
+      "terraform",
+      "azure-key-vault",
+      "docker",
+      "docker-compose",
+      "github-actions",
+      "claude-code"
+    ],
+    "practices": [
+      "container-migration",
+      "kubernetes",
+      "infrastructure-as-code",
+      "secrets-management",
+      "ai-assisted-development"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US financial compliance and contract management SaaS company",
+      "alias": "US financial compliance and contract management SaaS company",
+      "confidential": true
+    }
+  },
+  {
+    "id": "project-2026-06",
+    "headline": "Post-acquisition Azure migration for a revenue management SaaS company",
+    "startDate": "2026-06",
+    "endDate": "2026-11",
+    "role": "Senior DevOps Cloud Engineer",
+    "teamSize": "5",
+    "projectDescription": "Revenue lifecycle management SaaS (quote-to-cash, pricing, and contract management), migrating the services of an acquired pricing and revenue management company into its Azure environment.",
+    "responsibilities": [
+      "Migrated the acquired company's services within Azure by following the documented runbooks and running the Azure Pipelines in the order set in the migration tracker",
+      "Wrote PowerShell scripts with Claude Code to speed up running the migration pipelines",
+      "Automated manual steps in an internal web system with Python and Playwright, simulating user clicks",
+      "Reported failures during migration runs and opened Jira tickets to resolve them",
+      "Proposed improvements to the migration process and documented them"
+    ],
+    "results": [
+      "All services migrated successfully",
+      "Pipeline runs automated with the PowerShell scripts"
+    ],
+    "tools": [
+      "azure",
+      "azure-devops",
+      "azure-pipelines",
+      "powershell",
+      "python",
+      "playwright",
+      "claude-code",
+      "jira"
+    ],
+    "practices": [
+      "cloud-migration",
+      "runbook-execution",
+      "automation",
+      "technical-documentation"
+    ],
+    "employer": {
+      "name": "SoftServe",
+      "alias": null,
+      "confidential": false
+    },
+    "customer": {
+      "name": "US revenue management SaaS company",
+      "alias": "US revenue management SaaS company",
+      "confidential": true
+    }
+  }
+]

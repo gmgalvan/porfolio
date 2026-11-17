@@ -1,0 +1,2468 @@
+[
+  {
+    "id": "ai-for-cybersecurity",
+    "name": "AI for cybersecurity",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ai-infrastructure",
+    "name": "AI infrastructure",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ai-assisted-development",
+    "name": "AI-assisted development",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "aks",
+    "name": "AKS",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "api-gateway",
+    "name": "API Gateway",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "api-design",
+    "name": "API design",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "aws-budgets",
+    "name": "AWS Budgets",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "aws-organizations",
+    "name": "AWS Organizations",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "air-gapped-environments",
+    "name": "Air-gapped environments",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "angular",
+    "name": "Angular",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "apache-beam",
+    "name": "Apache Beam",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "architecture-assessment",
+    "name": "Architecture assessment",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "athena",
+    "name": "Athena",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "automation",
+    "name": "Automation",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "azure",
+    "name": "Azure",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "azure-devops",
+    "name": "Azure DevOps",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "azure-key-vault",
+    "name": "Azure Key Vault",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "azure-pipelines",
+    "name": "Azure Pipelines",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "backstage",
+    "name": "Backstage",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "bare-metal-kubernetes",
+    "name": "Bare-metal Kubernetes",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "batch-processing",
+    "name": "Batch processing",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "bazel",
+    "name": "Bazel",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "beautiful-soup",
+    "name": "Beautiful Soup",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "bedrock",
+    "name": "Bedrock",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "bigtable",
+    "name": "Bigtable",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": "google-cloud",
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "bitbucket",
+    "name": "Bitbucket",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "blue-green-deployments",
+    "name": "Blue-green deployments",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ci-cd",
+    "name": "CI/CD",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "celery",
+    "name": "Celery",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "change-data-capture",
+    "name": "Change data capture",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "chatbot-development",
+    "name": "Chatbot development",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "circleci",
+    "name": "CircleCI",
+    "kind": "technology",
+    "categories": [
+      "Build & Test"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cloud-consulting",
+    "name": "Cloud consulting",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cloud-governance",
+    "name": "Cloud governance",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cloud-migration",
+    "name": "Cloud migration",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cloud-networking",
+    "name": "Cloud networking",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cloudformation",
+    "name": "CloudFormation",
+    "kind": "technology",
+    "categories": [
+      "Release & Deploy"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cloudwatch",
+    "name": "CloudWatch",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cloudwatch-events",
+    "name": "CloudWatch Events",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "codebuild",
+    "name": "CodeBuild",
+    "kind": "technology",
+    "categories": [
+      "Build & Test"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "codepipeline",
+    "name": "CodePipeline",
+    "kind": "technology",
+    "categories": [
+      "Release & Deploy"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cognito",
+    "name": "Cognito",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "concurrency-control",
+    "name": "Concurrency control",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "container-migration",
+    "name": "Container migration",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "container-orchestration",
+    "name": "Container orchestration",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "containerization",
+    "name": "Containerization",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "control-tower",
+    "name": "Control Tower",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cost-explorer",
+    "name": "Cost Explorer",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "cost-optimization",
+    "name": "Cost optimization",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "d3-js",
+    "name": "D3.js",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "db2",
+    "name": "DB2",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "dcgm",
+    "name": "DCGM",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "dms",
+    "name": "DMS",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "data-lake",
+    "name": "Data lake",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "data-migration",
+    "name": "Data migration",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "data-pipelines",
+    "name": "Data pipelines",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "data-visualization",
+    "name": "Data visualization",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "datadog",
+    "name": "Datadog",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "dataflow",
+    "name": "Dataflow",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": "google-cloud",
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "devsecops",
+    "name": "DevSecOps",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "kind": "technology",
+    "categories": [
+      "Build & Test"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "docker-compose",
+    "name": "Docker Compose",
+    "kind": "technology",
+    "categories": [
+      "Build & Test"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "dynamodb",
+    "name": "DynamoDB",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ec2",
+    "name": "EC2",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ecr",
+    "name": "ECR",
+    "kind": "technology",
+    "categories": [
+      "Release & Deploy"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ecs",
+    "name": "ECS",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "efs",
+    "name": "EFS",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "eks",
+    "name": "EKS",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "echo",
+    "name": "Echo",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "elastic-beanstalk",
+    "name": "Elastic Beanstalk",
+    "kind": "technology",
+    "categories": [
+      "Release & Deploy"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "elastic-load-balancing",
+    "name": "Elastic Load Balancing",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ephemeral-environments",
+    "name": "Ephemeral environments",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "event-streaming",
+    "name": "Event streaming",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "event-driven-architecture",
+    "name": "Event-driven architecture",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "eventbridge",
+    "name": "EventBridge",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "fargate",
+    "name": "Fargate",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "flask",
+    "name": "Flask",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "full-stack-development",
+    "name": "Full-stack development",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "gke",
+    "name": "GKE",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "google-cloud",
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "gpu-orchestration",
+    "name": "GPU orchestration",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "gazelle",
+    "name": "Gazelle",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "generative-ai-infrastructure",
+    "name": "Generative AI infrastructure",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "github-actions",
+    "name": "GitHub Actions",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "gitlab-ci",
+    "name": "GitLab CI",
+    "kind": "technology",
+    "categories": [
+      "Build & Test"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "glue",
+    "name": "Glue",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "go",
+    "name": "Go",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "google-cloud",
+    "name": "Google Cloud",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "gorilla-mux",
+    "name": "Gorilla Mux",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "graphql",
+    "name": "GraphQL",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "harbor",
+    "name": "Harbor",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "harness",
+    "name": "Harness",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "helm",
+    "name": "Helm",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ibm-cloud",
+    "name": "IBM Cloud",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ibm-watson-assistant",
+    "name": "IBM Watson Assistant",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": "ibm-cloud",
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "infrastructure-as-code",
+    "name": "Infrastructure as Code",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "jira",
+    "name": "Jira",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "john-snow-labs",
+    "name": "John Snow Labs",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "jupyter",
+    "name": "Jupyter",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "kafka",
+    "name": "Kafka",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "lake-formation",
+    "name": "Lake Formation",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "lambda",
+    "name": "Lambda",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "llama",
+    "name": "Llama",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "msk",
+    "name": "MSK",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "managed-services",
+    "name": "Managed services",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "mentoring",
+    "name": "Mentoring",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "metallb",
+    "name": "MetalLB",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "microservices",
+    "name": "Microservices",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "mithril-js",
+    "name": "Mithril.js",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "model-serving",
+    "name": "Model serving",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "monorepo",
+    "name": "Monorepo",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "ngc",
+    "name": "NGC",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nginx-ingress",
+    "name": "NGINX Ingress",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nlp",
+    "name": "NLP",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nvidia-ai-enterprise",
+    "name": "NVIDIA AI Enterprise",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nvidia-base-command-manager",
+    "name": "NVIDIA Base Command Manager",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nvidia-gpu-operator",
+    "name": "NVIDIA GPU Operator",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nvidia-kai-scheduler",
+    "name": "NVIDIA KAI Scheduler",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nvidia-l40s",
+    "name": "NVIDIA L40S",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nvidia-morpheus",
+    "name": "NVIDIA Morpheus",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nvidia-nim",
+    "name": "NVIDIA NIM",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nemotron",
+    "name": "Nemotron",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "nestjs",
+    "name": "NestJS",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "oidc",
+    "name": "OIDC",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "opa",
+    "name": "OPA",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "observability",
+    "name": "Observability",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "octopus-deploy",
+    "name": "Octopus Deploy",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "opensearch",
+    "name": "OpenSearch",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "pandas",
+    "name": "Pandas",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "performance-optimization",
+    "name": "Performance optimization",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "platform-engineering",
+    "name": "Platform engineering",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "policy-as-code",
+    "name": "Policy as code",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "powershell",
+    "name": "PowerShell",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "privatelink",
+    "name": "PrivateLink",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "prometheus",
+    "name": "Prometheus",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "protocol-buffers",
+    "name": "Protocol Buffers",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "pub-sub",
+    "name": "Pub/Sub",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": "google-cloud",
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "pulumi",
+    "name": "Pulumi",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "pulumi-cloud",
+    "name": "Pulumi Cloud",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "pulumi-esc",
+    "name": "Pulumi ESC",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "query-optimization",
+    "name": "Query optimization",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "quicksight",
+    "name": "QuickSight",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "rag",
+    "name": "RAG",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "rds",
+    "name": "RDS",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "rest-api-design",
+    "name": "REST API design",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "rasa",
+    "name": "Rasa",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "refactoring",
+    "name": "Refactoring",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "rego",
+    "name": "Rego",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "route-53",
+    "name": "Route 53",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "runbook-execution",
+    "name": "Runbook execution",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "s3",
+    "name": "S3",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "scp",
+    "name": "SCP",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "sql",
+    "name": "SQL",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "sqs",
+    "name": "SQS",
+    "kind": "technology",
+    "categories": [
+      "Run"
+    ],
+    "parent": "aws",
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "sagemaker",
+    "name": "SageMaker",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "scrapy",
+    "name": "Scrapy",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "secrets-management",
+    "name": "Secrets management",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "security",
+    "name": "Security",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "security-assessment",
+    "name": "Security assessment",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "selenium",
+    "name": "Selenium",
+    "kind": "technology",
+    "categories": [
+      "Build & Test"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "serverless",
+    "name": "Serverless",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "snowflake",
+    "name": "Snowflake",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "spinnaker",
+    "name": "Spinnaker",
+    "kind": "technology",
+    "categories": [
+      "Release & Deploy"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "step-functions",
+    "name": "Step Functions",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "superset",
+    "name": "Superset",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "swagger",
+    "name": "Swagger",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "technical-documentation",
+    "name": "Technical documentation",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-11",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "technical-writing",
+    "name": "Technical writing",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "tekton",
+    "name": "Tekton",
+    "kind": "technology",
+    "categories": [
+      "Build & Test"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "terraform",
+    "name": "Terraform",
+    "kind": "technology",
+    "categories": [
+      "Release & Deploy"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2026-06",
+    "currentlyUsed": false,
+    "freshness": "fresh",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "terraform-cloud",
+    "name": "Terraform Cloud",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "textract",
+    "name": "Textract",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "third-party-api-integrations",
+    "name": "Third-party API integrations",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "tilt",
+    "name": "Tilt",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-02",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "triton-inference-server",
+    "name": "Triton Inference Server",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-12",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2025-07",
+    "currentlyUsed": false,
+    "freshness": "rusty",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "unit-testing",
+    "name": "Unit testing",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "vpc",
+    "name": "VPC",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "vue-js",
+    "name": "Vue.js",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2021-07",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "weaviate",
+    "name": "Weaviate",
+    "kind": "technology",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2024-04",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "web-scraping",
+    "name": "Web scraping",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "workflow-automation",
+    "name": "Workflow automation",
+    "kind": "practice",
+    "categories": [],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2018-12",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "zendesk",
+    "name": "Zendesk",
+    "kind": "technology",
+    "categories": [
+      "Plan"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2019-11",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "etcd",
+    "name": "etcd",
+    "kind": "technology",
+    "categories": [
+      "Data"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-01",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  },
+  {
+    "id": "grpc",
+    "name": "gRPC",
+    "kind": "technology",
+    "categories": [
+      "Code"
+    ],
+    "parent": null,
+    "aliases": [],
+    "lastUsed": "2023-09",
+    "currentlyUsed": false,
+    "freshness": "stale",
+    "yearsOfExperience": null
+  }
+]

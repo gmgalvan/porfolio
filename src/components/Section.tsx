@@ -1,25 +1,32 @@
-// Collapsible section built on native <details>: works without JavaScript,
-// keyboard accessible, and opens by default.
+import Collapsible from "./Collapsible";
+
+// A collapsible CV section in the two-column layout: label on the left, content
+// on the right (like the Word CV). `wide` lets the content span both columns,
+// for blocks that carry their own label column (experience facts, phases).
 export default function Section({
   id,
   title,
   toggleLabel,
+  wide = false,
   children,
 }: {
   id: string;
   title: string;
   toggleLabel: string;
+  wide?: boolean;
   children: React.ReactNode;
 }) {
   return (
-    <section aria-labelledby={id}>
-      <details open className="collapsible">
-        <summary title={toggleLabel}>
-          <h2 id={id}>{title}</h2>
-          <span className="chevron" aria-hidden="true" />
-        </summary>
-        <div className="collapsible-body">{children}</div>
-      </details>
-    </section>
+    <Collapsible
+      as="section"
+      className={wide ? "cv-section is-wide" : "cv-section"}
+      headingTag="h2"
+      headingId={id}
+      heading={title}
+      bodyClassName="cv-body"
+      toggleLabel={toggleLabel}
+    >
+      {children}
+    </Collapsible>
   );
 }

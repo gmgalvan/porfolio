@@ -1,35 +1,19 @@
-import { content, profile } from "@/content";
-import { cvMarkdown, pageUrl } from "@/site";
+import { cvMarkdown, getCv, pageUrl } from "@/site";
 
 export const dynamic = "force-static";
 
-export function GET() {
-  const body = `# ${profile.name} — CV
+export async function GET() {
+  const cv = await getCv();
+  const body = `# ${cv.name} — CV
 
 Source: ${pageUrl("en")} (English) · ${pageUrl("es")} (Español)
 
----
+**${cv.title}**${cv.location ? ` · ${cv.location}` : ""}
 
-# English
+${cv.intro.join("\n\n")}
 
-**${content.en.role}** · ${content.en.location}
-
-${content.en.intro.join("\n\n")}
-
-${cvMarkdown("en")}
-
----
-
-# Español
-
-**${content.es.role}** · ${content.es.location}
-
-${content.es.intro.join("\n\n")}
-
-${cvMarkdown("es")}
+${cvMarkdown(cv, "en")}
 `;
 
-  return new Response(body, {
-    headers: { "Content-Type": "text/plain; charset=utf-8" },
-  });
+  return new Response(body, { headers: { "Content-Type": "text/plain; charset=utf-8" } });
 }

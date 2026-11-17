@@ -8,9 +8,12 @@
   },
   "scripts": {
     "dev": "next dev",
+    "dev:fixtures": "CV_DATA=fixtures next dev",
     "build": "next build",
     "start": "npx serve out",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest run",
+    "snapshot": "node scripts/snapshot.mjs"
   },
   "dependencies": {
     "next": "16.4.6",
@@ -18,11 +21,16 @@
     "react-dom": "19.3.1"
   },
   "devDependencies": {
+    "@aws-crypto/sha256-js": "^5.2.0",
+    "@aws-sdk/credential-providers": "^3.1170.0",
+    "@smithy/protocol-http": "^5.6.2",
+    "@smithy/signature-v4": "^5.7.5",
     "@types/node": "22.20.5",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.6",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "^5.1.0"
   }
 }

@@ -1,13 +1,14 @@
 import type { MetadataRoute } from "next";
-import { content, profile } from "@/content";
+import { getCv, metaDescription } from "@/site";
 
 export const dynamic = "force-static";
 
-export default function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+  const cv = await getCv();
   return {
-    name: `${profile.name} — ${content.en.role}`,
-    short_name: profile.name,
-    description: content.en.meta.description,
+    name: `${cv.name} — ${cv.title}`,
+    short_name: cv.name,
+    description: metaDescription(cv),
     start_url: "/",
     display: "browser",
     background_color: "#e9e6e1",

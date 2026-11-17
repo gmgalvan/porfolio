@@ -1,0 +1,202 @@
+{
+  "profile": {
+    "name": "Guillermo Galvan",
+    "title": "Senior DevOps & Cloud Engineer | Go Backend Engineer | AI Infrastructure and Operations",
+    "contact": {
+      "email": "guillermoo.gs@gmail.com",
+      "location": null,
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/gmgalvan/",
+        "github": "https://github.com/gmgalvan",
+        "website": null
+      }
+    }
+  },
+  "summaries": [
+    {
+      "focus": "cloud-devops",
+      "text": "Cloud DevOps Engineer with over 9 years of experience, from Go and Python backend development to building, migrating, and operating cloud-native infrastructure on AWS, GCP, and Azure. Hands-on with Kubernetes (EKS, GKE, bare-metal), Infrastructure as Code (Terraform, Pulumi), and CI/CD automation with GitLab CI, CircleCI, and Azure DevOps, cutting deployment times from days to hours.\n\nRecent work focuses on AI infrastructure: deploying GenAI, LLMOps, and RAG pipelines on AWS, and GPU workloads on Kubernetes with NVIDIA NIM and the GPU Operator. Currently building agentic workflows and designing the architecture of LLM-based applications with Claude."
+    }
+  ],
+  "education": [
+    {
+      "id": "mechatronics-engineer",
+      "degree": "Mechatronics Engineer",
+      "institution": "Centro de Enseñanza Técnica Industrial (CETI Colomos)",
+      "year": 2015
+    }
+  ],
+  "certifications": [
+    {
+      "id": "claude-certified-architect-foundations",
+      "name": "Claude Certified Architect – Foundations",
+      "kind": "certification",
+      "issuer": "Anthropic",
+      "issuedDate": "2026-11",
+      "expiresDate": "2027-11",
+      "credentialId": "391074f6-72a9-4efa-ba0a-04810966ebcf",
+      "credentialUrl": null,
+      "skills": [],
+      "status": "active"
+    },
+    {
+      "id": "aws-solutions-architect-associate",
+      "name": "AWS Certified Solutions Architect – Associate",
+      "kind": "certification",
+      "issuer": "Amazon Web Services (AWS)",
+      "issuedDate": "2026-10",
+      "expiresDate": "2029-10",
+      "credentialId": "a065d156b993417c8ad5f45f5e20809b",
+      "credentialUrl": null,
+      "skills": [
+        "aws"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "nvidia-ai-infrastructure-operations",
+      "name": "NVIDIA-Certified Associate: AI Infrastructure and Operations",
+      "kind": "certification",
+      "issuer": "NVIDIA",
+      "issuedDate": "2026-01",
+      "expiresDate": "2028-01",
+      "credentialId": null,
+      "credentialUrl": null,
+      "skills": [],
+      "status": "active"
+    },
+    {
+      "id": "terraform-associate-003",
+      "name": "HashiCorp Certified: Terraform Associate (003)",
+      "kind": "certification",
+      "issuer": "HashiCorp",
+      "issuedDate": "2024-10",
+      "expiresDate": "2026-10",
+      "credentialId": "8bc3046a-e9bb-45ef-9eb1-a674f67c2c24",
+      "credentialUrl": null,
+      "skills": [
+        "terraform"
+      ],
+      "status": "expired"
+    },
+    {
+      "id": "go-basic-hackerrank",
+      "name": "Go Basic",
+      "kind": "course",
+      "issuer": "HackerRank",
+      "issuedDate": "2023-01",
+      "expiresDate": null,
+      "credentialId": "5135A9445DB9",
+      "credentialUrl": null,
+      "skills": [
+        "go"
+      ],
+      "status": "no-expiry"
+    },
+    {
+      "id": "mlops-fundamentals-coursera",
+      "name": "MLOps (Machine Learning Operations) Fundamentals",
+      "kind": "course",
+      "issuer": "Coursera",
+      "issuedDate": "2021-08",
+      "expiresDate": null,
+      "credentialId": "U7CYGCXBS94F",
+      "credentialUrl": null,
+      "skills": [],
+      "status": "no-expiry"
+    },
+    {
+      "id": "kubernetes-fundamentals-lfs258",
+      "name": "Kubernetes Fundamentals (LFS258)",
+      "kind": "course",
+      "issuer": "The Linux Foundation",
+      "issuedDate": "2020-09",
+      "expiresDate": null,
+      "credentialId": "LF-4symlo1qzr",
+      "credentialUrl": null,
+      "skills": [
+        "kubernetes"
+      ],
+      "status": "no-expiry"
+    },
+    {
+      "id": "postgresql-administration-deep-dive",
+      "name": "PostgreSQL Administration Deep Dive",
+      "kind": "course",
+      "issuer": "Linux Academy",
+      "issuedDate": "2020-08",
+      "expiresDate": null,
+      "credentialId": "369293",
+      "credentialUrl": null,
+      "skills": [
+        "postgresql"
+      ],
+      "status": "no-expiry"
+    },
+    {
+      "id": "datacamp-importing-cleaning-python",
+      "name": "Importing & Cleaning Data with Python",
+      "kind": "course",
+      "issuer": "DataCamp",
+      "issuedDate": null,
+      "expiresDate": null,
+      "credentialId": null,
+      "credentialUrl": null,
+      "skills": [],
+      "status": "no-expiry"
+    },
+    {
+      "id": "datacamp-nlp-fundamentals-python",
+      "name": "Natural Language Processing Fundamentals in Python",
+      "kind": "course",
+      "issuer": "DataCamp",
+      "issuedDate": null,
+      "expiresDate": null,
+      "credentialId": null,
+      "credentialUrl": null,
+      "skills": [],
+      "status": "no-expiry"
+    },
+    {
+      "id": "datacamp-python-programmer",
+      "name": "Python Programmer",
+      "kind": "course",
+      "issuer": "DataCamp",
+      "issuedDate": null,
+      "expiresDate": null,
+      "credentialId": null,
+      "credentialUrl": null,
+      "skills": [],
+      "status": "no-expiry"
+    },
+    {
+      "id": "datacamp-unsupervised-learning-python",
+      "name": "Unsupervised Learning with Python",
+      "kind": "course",
+      "issuer": "DataCamp",
+      "issuedDate": null,
+      "expiresDate": null,
+      "credentialId": null,
+      "credentialUrl": null,
+      "skills": [],
+      "status": "no-expiry"
+    }
+  ],
+  "languages": [
+    {
+      "id": "english",
+      "name": "English",
+      "level": "B2"
+    },
+    {
+      "id": "french",
+      "name": "French",
+      "level": "B1"
+    },
+    {
+      "id": "spanish",
+      "name": "Spanish",
+      "level": "native"
+    }
+  ]
+}
